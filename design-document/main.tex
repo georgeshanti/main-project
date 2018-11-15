@@ -107,7 +107,7 @@ Once the correct gesture has been identified, the corresponding class object is 
 \section{Data Flow Diagram}
 
 \subsection{Level 0}
-\begin{tikzpicture}
+\begin{tikzpicture}[node distance=5cm]
     \node (proc1) [process]{User Input};
     \node (proc2) [process, right of = proc1]{Image Processing};
     \node (proc3) [process, right of = proc2]{Gesture Recognition};
