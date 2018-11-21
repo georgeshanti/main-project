@@ -57,14 +57,22 @@
 
 
 \chapter{Introduction}
-Briefly explain the purpose of the project and the proposed solution
-\section{Purpose}
+section{Purpose}
 Hand Gesture GUI Control System version 1 revison 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
 
 \section{Overview}
-  A short description of how the rest of the document is organized and what can be 
-  found in the rest of the document.
-  Briefly describe the various parts!
+  The Sytem Architecture provides a view into how the different blocks of the system is organized.
+  There are mainly four stages in this system. They are Background Subtraction, Feature Extraction,
+  Finger-Tip Tracking, Gesture Recognition and Gesture Mapping.\\
+  The Video input feed is split into frames and the hand gesture is detected from the multiple frames.
+  \\ The User case diagram has the different functions which are targeted at different user classes.
+  \\The class structure has been described in the class diagram. There is a main abstract class from which two 
+  sub-classes are derived; SavedGestures and DetectedGestures. \\
+  The flow of activity has been shown in the activity diagram. All the actions from the start, i.e the user gesture to the mapping and execution of the LINUX GUI function has been shown.
+  \\The algorithms section describe the different algorithms used in the system.
+  Convex Hull, Camshift and GMG are the main algorithms used.
+  
+
 
 \chapter{System Architecture}
 In this section, explain the detailed architecture of the proposed system.
