@@ -7,6 +7,7 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage{graphics}
+\usetikzlibrary{shapes.misc, positioning}
 
 \usetikzlibrary{shapes.geometric, arrows}
 \definecolor{orange}{HTML}{eeeeee}
@@ -31,6 +32,9 @@
 \usepackage{hyperref}
 
 \tikzstyle{process} = [rectangle, minimum width=4.4cm, minimum height=1cm, text centered, draw=black, fill=orange]
+\tikzstyle{process1} = [rectangle, rounded corners=0.5cm, minimum width=6cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
+\tikzstyle{oval} = [ellipse, minimum width=3cm, minimum height=1.5cm, text centered, draw=black, fill=orange]
+\tikzstyle{func} = [rounded rectangle]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
 \begin{document}
@@ -115,14 +119,32 @@ Once the correct gesture has been identified, the corresponding class object is 
 \section{Data Flow Diagram}
 
 \subsection{Level 0}
-\begin{tikzpicture}[node distance=5cm]
-    \node (proc1) [process]{User Input};
-    \node (proc2) [process, right of = proc1]{Image Processing};
-    \node (proc3) [process, right of = proc2]{Gesture Recognition};
-    \node (proc4) [process, right of = proc2]{Linux GUI function};
-    \draw[arrow] (proc1)--(proc2);
-    \draw[arrow] (proc2)--(proc3);
-    \draw[arrow] (proc3)--(proc4);
+\begin{tikzpicture}[node distance=7cm]
+    \node (proc1) [oval]{User};
+    \node (proc2) [oval, right of = proc1]{Frame Processing};
+    \node (proc3) [process1, below of = proc2, yshift=4cm]{\\Daemon\\\\Linux GUI control\\};
+    \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Hand\ movement$};
+    \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0] {$Frames$};
+    \draw [black] ([yshift=0.2cm]proc3.west)--([yshift=0.2cm]proc3.east);
+\end{tikzpicture}
+\\
+\subsection{Level 2}
+\begin{tikzpicture}[node distance=2cm]
+    \node (proc1) [oval]{Fram Sequence};
+    \node (proc2) [process1, right of = proc1, xshift=8 cm]{\\Feature Extraction\\\\
+    Background Subtraction\\
+    and Extraction of fingertips.\\};
+    \node (proc3) [process1, below of = proc2, yshift=-3cm]{\\Gesture Recognition\\\\
+    Trace path followed by\\
+    fingertips and Compare with\\
+    predifinde gestures\\};
+    \node (proc4) [process1, left of = proc3, xshift=-8cm]{\\Daemon\\\\Execute GUI function\\};
+    \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Frames$};
+    \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0]{$Fingertip\ positions$};
+    \draw[arrow] (proc3)--(proc4) node[midway,above,rotate=0] {$Gesture$};
+    \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
+    \draw [black] ([yshift=0.6cm]proc3.west)--([yshift=0.6cm]proc3.east);
+    \draw [black] ([yshift=0.2cm]proc4.west)--([yshift=0.2cm]proc4.east);
 \end{tikzpicture}
 
 \section{Use case diagram}
