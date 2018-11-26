@@ -33,9 +33,11 @@
 
 \tikzstyle{process} = [rectangle, minimum width=4.4cm, minimum height=1cm, text centered, draw=black, fill=orange]
 \tikzstyle{process1} = [rectangle, rounded corners=0.5cm, minimum width=6cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
-\tikzstyle{oval} = [ellipse, minimum width=3cm, minimum height=1.5cm, text centered, draw=black, fill=orange]
+\tikzstyle{process2} = [ font=\small, rectangle, rounded corners=0.5cm, minimum width=3cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
+\tikzstyle{oval} = [ellipse, minimum width=3cm, minimum height=2cm, text centered, draw=black, fill=orange]
 \tikzstyle{func} = [rounded rectangle]
 \tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{overlay} = [dashed, rectangle, text centered, draw=black, align=center]
 
 \begin{document}
 
@@ -128,16 +130,16 @@ Once the correct gesture has been identified, the corresponding class object is 
     \draw [black] ([yshift=0.2cm]proc3.west)--([yshift=0.2cm]proc3.east);
 \end{tikzpicture}
 \\
-\subsection{Level 2}
+\subsection{Level 1}
 \begin{tikzpicture}[node distance=2cm]
-    \node (proc1) [oval]{Fram Sequence};
+    \node (proc1) [oval]{Frame Sequence};
     \node (proc2) [process1, right of = proc1, xshift=8 cm]{\\Feature Extraction\\\\
     Background Subtraction\\
     and Extraction of fingertips.\\};
     \node (proc3) [process1, below of = proc2, yshift=-3cm]{\\Gesture Recognition\\\\
     Trace path followed by\\
     fingertips and Compare with\\
-    predifinde gestures\\};
+    predifined gestures\\};
     \node (proc4) [process1, left of = proc3, xshift=-8cm]{\\Daemon\\\\Execute GUI function\\};
     \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Frames$};
     \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0]{$Fingertip\ positions$};
@@ -145,6 +147,65 @@ Once the correct gesture has been identified, the corresponding class object is 
     \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
     \draw [black] ([yshift=0.6cm]proc3.west)--([yshift=0.6cm]proc3.east);
     \draw [black] ([yshift=0.2cm]proc4.west)--([yshift=0.2cm]proc4.east);
+\end{tikzpicture}
+
+\subsection{Level 2}
+\begin{tikzpicture}[node distance=0cm]
+    \node (proc1) [oval]{Frame Sequence};
+
+    \node (over1) [overlay, label=above:Background Subtraction and Feature Extreaction, minimum width = 11cm, minimum height = 7cm, right of = proc1, xshift=9cm]{};
+
+    \node (proc2) [process2, below=of over1.north west, xshift=2.6cm, yshift=-0.2cm]{\\Background Detection\\\\
+    The image is scanned\\
+    to detect the\\
+    non-changing parts\\};
+
+
+    \node (proc3) [process2, right of = proc2, xshift=6cm]{\\Background Removal\\\\
+    The detected\\
+    background is\\
+    removed\\};
+
+    \node (proc4) [process2, left of = proc3, xshift=-2.9cm, yshift=-4cm]{\\Object Detection\\\\
+    The fingertips are extracted from the image with\\
+    only foreground data\\};
+
+    \draw[arrow] (proc1)--(over1) node[midway,above,rotate=0] {$Frames$};
+    \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
+    \draw [black] ([yshift=0.5cm]proc3.west)--([yshift=0.5cm]proc3.east);
+    \draw [black] ([yshift=0.4cm]proc4.west)--([yshift=0.4cm]proc4.east);
+
+    \node (over2) [overlay, label={[xshift=-3.7cm]Gesture Recognition}, minimum width = 11cm, minimum height = 5.8cm, right of = over1, yshift=-8cm]{};
+
+    \node (proc5) [process2, below=of over2.north west, xshift=2.6cm, yshift=-0.2cm]{\\Object Tracking\\\\
+    Path followed by the\\
+    fingertips are computed\\};
+
+    \node (proc6) [process2, right of = proc5, xshift=6cm]{\\Thresholding\\\\
+    Detected path is\\
+    compared with existing\\
+    gesture data\\};
+
+    \node (proc7) [process2, left of = proc6, xshift=-3cm, yshift=-3cm]{\\\\\\
+    Output from both is used to find a suitable\\
+    gesture if any.\\};
+
+    \draw [black] ([yshift=0.4cm]proc5.west)--([yshift=0.4cm]proc5.east);
+    \draw [black] ([yshift=0.5cm]proc6.west)--([yshift=0.5cm]proc6.east);
+    \draw [black] ([yshift=0.5cm]proc7.west)--([yshift=0.5cm]proc7.east);
+
+    \node (over3) [overlay, label={[xshift=-4.7cm]Daemon}, minimum width = 11cm, minimum height = 4cm, right of = over2, yshift=-6.1cm]{};
+
+    \node (proc8) [process2, below=of over3.north west, xshift=2.6cm, yshift=-0.8cm]{\\Function Mapping\\\\
+    Function corresponding to\\
+    gesture is retrieved.\\};
+
+    \node (proc9) [process2, right of = proc8, xshift=6cm]{\\Function Execution\\\\
+    Function is executed\\};
+
+    \draw [black] ([yshift=0.4cm]proc8.west)--([yshift=0.4cm]proc8.east);
+    \draw [black] ([yshift=0.2cm]proc9.west)--([yshift=0.2cm]proc9.east);
+
 \end{tikzpicture}
 
 \section{Use case diagram}
