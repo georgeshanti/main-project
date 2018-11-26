@@ -154,6 +154,7 @@ Once the correct gesture has been identified, the corresponding class object is 
 \section{Class diagram}
 \begin{center}
     \includegraphics[scale=0.8]{classdiagram.png}
+    \includegraphics[scale=0.8]{UserClass.png}
 \end{center}
 \section{Activity diagram}
 \begin{center}
@@ -162,10 +163,54 @@ Once the correct gesture has been identified, the corresponding class object is 
 
 \chapter{Algorithms}
 Explain the pseudocodes of the algorithms that will be used in the implementation of the project.
-\section{Algorithm 1}
-psuedocode and its explanation briefly.
-\section{Algorithm 2}
-psuedocode and its explanation briefly.
+\section{Overall algorithm}
+\begin{itemize}
+    \item Input: A set of contiguous video frames
+    \item Processing:
+    \begin{enumerate}
+        \item Calculate the foreground using MOG2 background subtraction algorithm.
+        \item Detect the fingertips using the Convex Hull algorithm.
+        \item Track the finger gesture using Continuously Adaptive Mean Shift (CAMshift) algorithm.
+        \item Save the above tracked graph to a DetectedGesture object.
+        \item Find the closest SavedGesture object and execute the GUI function.
+    \end{enumerate}
+    \item Output: The mapped GUI function
+\end{itemize}
+\section{Background subtraction}
+\begin{enumerate}
+    \item Transform video into frames
+    \item Estimate the background by using Frame Different Method
+    \item Calculate foreground area by applying: Foreground = Frame - Estimated background
+    \item Apply the threshold to find the output
+\end{enumerate}
+\section{Convex Hull}
+\begin{itemize}
+    \item Input: a list P of points in the plane.
+    \item Precondition: There must be at least 3 points.
+    \item Processing:
+    \begin{enumerate}
+        \item Initialize p as leftmost point.
+        \item Do following while we don’t come back to the first (or leftmost) point.
+        \begin{enumerate}
+            \item The next point q is the point such that the triplet (p, q, r) is counterclockwise for any other point r.
+            \item next[p] = q (Store q as next of p in the output convex hull).
+            \item p = q (Set p as q for next iteration).
+        \end{enumerate}
+    \end{enumerate}
+    \item Output: List of Convex Hull peaks
+\end{itemize}
+\section{CAMShift}
+\begin{itemize}
+    \item Input: Sequence of video frames
+    \item Processing:
+    \begin{enumerate}
+        \item Set the calculation region of the probability distribution equal to the whole frame.
+        \item Choose the initial location of the two-dimensional mean shift search window.
+        \item Calculate the colour probability distribution in the 2D region centred on the search window location in an area slightly larger than the mean shift window size.
+        \item Perform the search of the maximum density probability using the mean shift parameter for convergence or for setting the number of iterations. Store the zero moment (area or size) and middle position.
+        \item For the next video frame, place the search window in the middle position fixed in step 4, and set the window size in conformity to the last moment. Go to step 3. 
+    \end{enumerate}
+\end{itemize}
 \begin{thebibliography}{999}
 \addcontentsline{toc}{chapter}{References}
 
