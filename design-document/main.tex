@@ -64,11 +64,11 @@
 \newpage
 \chapter{Introduction}
 \section{Purpose}
-Hand Gesture GUI Control System version 1 revison 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
+Hand Gesture GUI Control System version 1 revision 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
 
 \section{Overview}
 
-The Sytem Architecture provides a view into how the different blocks of the system is organized.
+The System Architecture provides a view into how the different blocks of the system is organized.
 There are mainly four stages in this system. They are Background Subtraction, Feature Extraction,Finger-Tip Tracking, Gesture Recognition and Gesture Mapping.
 The Video input feed is split into frames and the hand gesture is detected from the multiple frames.
 \\
@@ -105,7 +105,7 @@ MOG2, Convex Hull, Camshift and Brute Force Matching are the main algorithms use
 
 \section{Module 1 - Image Retrieval}
 The first step in this system is to retrieve the contiguous camera image frames. The user shows the hand-gesture 
-and it is retrieved via the webcam. The images are captured at short intervals to accomodate multi-frame fluid hand-gestures.
+and it is retrieved via the webcam. The images are captured at short intervals to accommodate multi-frame fluid hand-gestures.
 \\
 The camera feed is retrieved from the user's webcam using the CaptureFromCAM function provided by OpenCV.
 \\
@@ -128,9 +128,9 @@ hand and marking the peaks. This process is done in realtime and the extracted l
  
  The function find the convex hull of a 2D point set using the Sklansky’s algorithm
  that has O(N logN) complexity in the current implementation. The algorithm consisted of two parts. 
- Part 1 was inteded to take a simple polygon and return a maximal polygon (monotonic in both the 
+ Part 1 was intended to take a simple polygon and return a maximal polygon (monotonic in both the 
  horizontal and vertical directions). Part 2 was Sklansky's original algorithm, which
- was guarranteed to work on the output of part 1, since maximal polygons are weakly externally visible,
+ was guaranteed to work on the output of part 1, since maximal polygons are weakly externally visible,
  and it is proven that Sklansky's original algorithm works for such polygons.
 
 \section{Module 4 - Finger-Tip Tracking}
@@ -143,7 +143,7 @@ the probability distribution of the second frame is taken for the third frame an
 \section{Module 5 - Gesture Recognition}
 The convex hull and convexity defects along with the results of the CAMShift algorithm are 
 used to create a mathematical state of the currently recorded gesture. This state is compared 
-with the states of the saved gestures and the closest candidiate is chosen.
+with the states of the saved gestures and the closest candidate is chosen.
 
 We use Brute Force matching to find the closest saved gesture. First we create 
 ORB descriptors (Oriented FAST (Features from accelerated segment test) and Rotated BRIEF 
@@ -180,7 +180,7 @@ for the next gesture.
     \node (proc3) [process1, below of = proc2, yshift=-3cm]{\\Gesture Recognition\\\\
     Trace path followed by\\
     fingertips and Compare with\\
-    predifined gestures\\};
+    predefined gestures\\};
     \node (proc4) [process1, left of = proc3, xshift=-8cm]{\\Daemon\\\\Execute GUI function\\};
     \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Frames$};
     \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0]{$Fingertip\ positions$};
@@ -290,9 +290,9 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
     \item Input: Video frames with foreground and background.
     \item Output: Video frames with only foreground. 
     \begin{itemize}
-        \item Estimate the background by using Frame Difference Method
-        \item Calculate foreground area by applying: Foreground = Frame - Estimated background
-        \item Apply the threshold to find the output
+        \item Model each background pixel by a mixture of K Gaussian distributions (K = 3 to 5)
+        \item Calculate the weights of the mixture which represent the time proportions that those colours stay in the scene.
+        \item Remove the colours are which stay longer and more static.
     \end{itemize}
 \end{enumerate}
 \section{Convex Hull}
