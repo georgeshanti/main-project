@@ -73,7 +73,7 @@ There are mainly four stages in this system. They are Background Subtraction, Fe
 The Video input feed is split into frames and the hand gesture is detected from the multiple frames.
 \\
 \\
-The User case diagram has the different functions which are targeted at different user classes.
+The Use case diagram has the different functions which are targeted at different user classes.
 \\
 \\
 The class structure has been described in the class diagram. There is a main abstract class from which two 
@@ -84,14 +84,11 @@ The flow of activity has been shown in the activity diagram. All the actions fro
 \\
 \\
 The algorithms section describe the different algorithms used in the system.
-Convex Hull, Camshift and GMG are the main algorithms used.
+MOG2, Convex Hull, Camshift and Brute Force Matching are the main algorithms used.
   
 
 
 \chapter{System Architecture}
-In this section, explain the detailed architecture of the proposed system.
-It should include the architecture diagram and the explanation of the modules of the system.
-\\
 \begin{tikzpicture}[node distance=5cm]
     \node (proc1) [process] {Image Retrieval};
     \node (proc2) [process, right of = proc1] {Background Subtraction};
