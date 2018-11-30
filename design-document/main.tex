@@ -2,6 +2,7 @@
 \usepackage{listings}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
+\usepackage{scrextend}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{tikz}
@@ -177,6 +178,7 @@ for the next gesture.
 \end{tikzpicture}}
 \\
 \subsection{Level 1}
+\resizebox{\columnwidth}{!}{
 \begin{tikzpicture}[node distance=2cm]
     \node (proc1) [oval]{Frame Sequence};
     \node (proc2) [process1, right of = proc1, xshift=8 cm]{\\Feature Extraction\\\\
@@ -193,9 +195,10 @@ for the next gesture.
     \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
     \draw [black] ([yshift=0.6cm]proc3.west)--([yshift=0.6cm]proc3.east);
     \draw [black] ([yshift=0.2cm]proc4.west)--([yshift=0.2cm]proc4.east);
-\end{tikzpicture}
+\end{tikzpicture}}
 
 \subsection{Level 2}
+\resizebox{\columnwidth}{!}{
 \begin{tikzpicture}[node distance=0cm]
     \node (proc1) [oval]{Frame Sequence};
 
@@ -258,7 +261,7 @@ for the next gesture.
     \draw [black] ([yshift=0.4cm]proc8.west)--([yshift=0.4cm]proc8.east);
     \draw [black] ([yshift=0.2cm]proc9.west)--([yshift=0.2cm]proc9.east);
 
-\end{tikzpicture}
+\end{tikzpicture}}
 
 \section{Use case diagram}
 \begin{center}
@@ -291,10 +294,11 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
     \end{enumerate}
 \end{itemize}
 \section{Background subtraction}
-
 \begin{enumerate}
+    \item Purpose: To find the Region of Interest by subtracting the background from the image frame.
     \item Input: Image frames with foreground and background.
     \item Output: Image frames with only foreground. 
+    \item Method:
     \begin{itemize}
         \item Model each background pixel by a mixture of K Gaussian distributions (K = 3 to 5)
         \item Calculate the weights of the mixture which represent the time proportions that those colours stay in the scene.
@@ -303,11 +307,12 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \end{enumerate}
 \section{Convex Hull}
 \begin{itemize}
-    \item Input: a list P of points in the plane.
-    \item Precondition: There must be at least 3 points.
+    \item Purpose: To find the positions of the fingertips in the image frame.
+    \item Input: Image frames with background subtracted.
     \item Output: List of Convex Hull peaks
-    \item Processing:
+    \item Method:
     \begin{enumerate}
+        \item Threshold the image, and retrieve the points in the plane. Let's say there are P points.
         \item Initialize p as leftmost point.
         \item Do following while we don’t come back to the first (or leftmost) point.
         \begin{enumerate}
@@ -319,8 +324,9 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \end{itemize}
 \section{CAMShift}
 \begin{itemize}
-    \item Input: Sequence of image frames
-    \item Output: A graph of the fluid motion of the fingertips
+    \item Purpose: To map the positions of the fingertips in the multiple frames to one fluid motion, in the form of lines/curves in a 2D plane.
+    \item Input: Sequence of frames with Convex Hull peaks.
+    \item Output: 2D plane with a set of lines/curves representing the fluid motion of the fingertips.
     \item Processing:
     \begin{enumerate}
         \item Set the calculation region of the probability distribution equal to the whole frame.
@@ -332,8 +338,10 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \end{itemize}
 \section{Brute Force Matching}
 \begin{itemize}
+    \item Purpose: To match the DetectedGesture to a SavedGesture, and execute the corresponding GUI function.
     \item Input: The feature objects encoded in the SavedFeature and DetectedFeature objects.
     \item Output: A quantity representing the closeness of the two gestures.
+    \item Method:
     \begin{enumerate}
         \item For a given keypoint K1 from the first set, take every keypoint in the second set and calculate the distance.
         \item Distance formula used is Euclidean distance. The sum of the distances on each dimension is finally used to calculate the returned quantity.
@@ -341,6 +349,21 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
         \item The Euclidean Distance sum is normalized and returned.
     \end{enumerate}
 \end{itemize}
+
+\chapter{Conclusion}
+'MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm' is a suitable system to perform basic GUI functions using dynamic hand gestures. 
+\\
+
+The input feed is divided into individual frames taken at multiple intervals. These image frames are then passed into the Background Subtraction Module which isolates the Region of Interest.
+The images are then quantized to grayscale, and passed through the Convex Hull Algorithm to extract the fingertip points.
+Then, the motion of the fingertips is tracked using the tracking algorithm from the multiple frames, and the dynamic gesture is retrieved and saved as the detected gesture.
+This object is then compared using Brute Force Matching against all the saved gestures to find a suitable match. Once a match is found, the corresponding GUI function is executed.
+\\
+
+The algorithms specified in Section 4 are optimized and relatively fast, and are highly accurate.
+\\
+
+Hence, this is an easy-to-use and a highly expandable system for interfacing with the personal computer.
 \begin{thebibliography}{999}
 \addcontentsline{toc}{chapter}{References}
 
