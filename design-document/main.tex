@@ -284,7 +284,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \begin{itemize}
     \item Input: A set of contiguous image frames
     \item Output: The mapped GUI function
-    \item Processing:
+    \item Method:
     \begin{enumerate}
         \item Calculate the foreground using MOG2 background subtraction algorithm.
         \item Detect the fingertips using the Convex Hull algorithm.
@@ -327,7 +327,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
     \item Purpose: To map the positions of the fingertips in the multiple frames to one fluid motion, in the form of lines/curves in a 2D plane.
     \item Input: Sequence of frames with Convex Hull peaks.
     \item Output: 2D plane with a set of lines/curves representing the fluid motion of the fingertips.
-    \item Processing:
+    \item Method:
     \begin{enumerate}
         \item Set the calculation region of the probability distribution equal to the whole frame.
         \item Choose the initial location of the two-dimensional mean shift search window.
@@ -351,7 +351,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \end{itemize}
 
 \chapter{Conclusion}
-'MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm' is a suitable system to perform basic GUI functions using dynamic hand gestures. 
+MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm is a suitable system to perform basic GUI functions using dynamic hand gestures. 
 \\
 
 The input feed is divided into individual frames taken at multiple intervals. These image frames are then passed into the Background Subtraction Module which isolates the Region of Interest.
