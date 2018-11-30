@@ -35,6 +35,8 @@
 \tikzstyle{process1} = [rectangle, rounded corners=0.5cm, minimum width=6cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
 \tikzstyle{process2} = [ font=\small, rectangle, rounded corners=0.5cm, minimum width=3cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
 \tikzstyle{oval} = [ellipse, minimum width=3cm, minimum height=2cm, text centered, draw=black, fill=orange]
+\tikzstyle{oval2} = [ellipse, minimum width=2cm, minimum height=1.5cm, text centered, draw=black, fill=orange]
+
 \tikzstyle{func} = [rounded rectangle]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{overlay} = [dashed, rectangle, text centered, draw=black, align=center]
@@ -48,7 +50,7 @@
         \vspace{1.9cm}
         for\\
         \vspace{1.9cm}
-        Hand Gesture GUI Control System\\
+        MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm\\
         \vspace{1.9cm}
         \LARGE
         Prepared by \\MDL15CS040 19 George Thomas Shanti
@@ -64,7 +66,7 @@
 \newpage
 \chapter{Introduction}
 \section{Purpose}
-Hand Gesture GUI Control System version 1 revision 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
+MultiFrame Hand Gesture GUI Control System Using Convex Hull Algorithm version 1 revision 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
 
 \section{Overview}
 
@@ -162,14 +164,17 @@ for the next gesture.
 \section{Data Flow Diagram}
 
 \subsection{Level 0}
+\resizebox{\columnwidth}{!}{
 \begin{tikzpicture}[node distance=7cm]
-    \node (proc1) [oval]{User};
-    \node (proc2) [oval, right of = proc1]{Frame Processing};
-    \node (proc3) [process1, below of = proc2, yshift=4cm]{\\Daemon\\\\Linux GUI control\\};
+    \node (proc1) [oval2]{User};
+    \node (proc2) [oval2, minimum width=10mm,right of = proc1]{Gesture Recognition};
+    \node (proc3) [process1,minimum size=10 mm, right of = proc2,xshift= 10 mm]{Linux GUI Command};
+
     \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Hand\ movement$};
-    \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0] {$Frames$};
-    \draw [black] ([yshift=0.2cm]proc3.west)--([yshift=0.2cm]proc3.east);
-\end{tikzpicture}
+    \draw[arrow] (proc2)--(proc3) node[midway,above,rotate=0] {$Gesture Mapping$};
+%    \draw [black] ([yshift=0.2cm]proc3.west)--([yshift=0.2cm]proc3.east);
+
+\end{tikzpicture}}
 \\
 \subsection{Level 1}
 \begin{tikzpicture}[node distance=2cm]
@@ -274,7 +279,7 @@ for the next gesture.
 Explain the pseudocodes of the algorithms that will be used in the implementation of the project.
 \section{Overall algorithm}
 \begin{itemize}
-    \item Input: A set of contiguous video frames
+    \item Input: A set of contiguous image frames
     \item Output: The mapped GUI function
     \item Processing:
     \begin{enumerate}
@@ -286,6 +291,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
     \end{enumerate}
 \end{itemize}
 \section{Background subtraction}
+
 \begin{enumerate}
     \item Input: Video frames with foreground and background.
     \item Output: Video frames with only foreground. 
