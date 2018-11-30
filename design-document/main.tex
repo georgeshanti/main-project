@@ -72,7 +72,7 @@ MultiFrame Hand Gesture GUI Control System Using Convex Hull Algorithm version 1
 
 The System Architecture provides a view into how the different blocks of the system is organized.
 There are mainly four stages in this system. They are Background Subtraction, Feature Extraction,Finger-Tip Tracking, Gesture Recognition and Gesture Mapping.
-The Video input feed is split into frames and the hand gesture is detected from the multiple frames.
+The image input frames are analyzed and the hand gesture is detected from the multiple frames.
 \\
 \\
 The Use case diagram has the different functions which are targeted at different user classes.
@@ -293,8 +293,8 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \section{Background subtraction}
 
 \begin{enumerate}
-    \item Input: Video frames with foreground and background.
-    \item Output: Video frames with only foreground. 
+    \item Input: Image frames with foreground and background.
+    \item Output: Image frames with only foreground. 
     \begin{itemize}
         \item Model each background pixel by a mixture of K Gaussian distributions (K = 3 to 5)
         \item Calculate the weights of the mixture which represent the time proportions that those colours stay in the scene.
@@ -319,7 +319,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
 \end{itemize}
 \section{CAMShift}
 \begin{itemize}
-    \item Input: Sequence of video frames
+    \item Input: Sequence of image frames
     \item Output: A graph of the fluid motion of the fingertips
     \item Processing:
     \begin{enumerate}
@@ -327,7 +327,7 @@ Explain the pseudocodes of the algorithms that will be used in the implementatio
         \item Choose the initial location of the two-dimensional mean shift search window.
         \item Calculate the colour probability distribution in the 2D region centred on the search window location in an area slightly larger than the mean shift window size.
         \item Perform the search of the maximum density probability using the mean shift parameter for convergence or for setting the number of iterations. Store the zero moment (area or size) and middle position.
-        \item For the next video frame, place the search window in the middle position fixed in step 4, and set the window size in conformity to the last moment. Go to step 3. 
+        \item For the next image frame, place the search window in the middle position fixed in step 4, and set the window size in conformity to the last moment. Go to step 3. 
     \end{enumerate}
 \end{itemize}
 \section{Brute Force Matching}
