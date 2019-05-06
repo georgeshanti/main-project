@@ -1,0 +1,65 @@
+\contentsline {chapter}{List of Figures}{iii}{figure.caption.2}
+\contentsline {chapter}{List of Tables}{iv}{figure.caption.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Proposed Project}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Problem Statement}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Proposed Solution}{1}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}System Study Report}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Literature Survey}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}Proposed System}{2}{section.2.2}
+\contentsline {chapter}{\numberline {3}Software Requirement Specification}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{3}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Purpose}{3}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Document Conventions }{3}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Intended Audience and Reading Suggestions }{3}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Project Scope}{3}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Overview of Developer’s Responsibilities }{3}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Overall Description}{4}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Product Perspective}{4}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Product Functions}{4}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}User Classes and Characteristics }{4}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Operating Environment}{4}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Design and Implementation Constraints}{4}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}User Documentation}{4}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}General Constraints}{4}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Assumptions and Dependencies}{4}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}External Interface Requirements}{5}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}User Interfaces}{5}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Hardware Interfaces}{5}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Software Interfaces}{5}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Communication Interfaces}{5}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Hardware and Software Requirements}{6}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Hardware Requirements}{6}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Software Requirements}{6}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Functional Requirements}{7}{section.3.5}
+\contentsline {section}{\numberline {3.6}Non-functional Requirements}{8}{section.3.6}
+\contentsline {section}{\numberline {3.7}Other Requirements}{8}{section.3.7}
+\contentsline {chapter}{\numberline {4}System Design}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Architecture}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Input Design}{9}{section.4.2}
+\contentsline {section}{\numberline {4.3}Database Design}{9}{section.4.3}
+\contentsline {section}{\numberline {4.4}Libraries and Packages Used}{9}{section.4.4}
+\contentsline {section}{\numberline {4.5}Module Description}{9}{section.4.5}
+\contentsline {chapter}{\numberline {5}Data Flow Diagram}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Level 0 DFD}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}Level 1 DFD}{10}{section.5.2}
+\contentsline {section}{\numberline {5.3}Level 2 DFD}{10}{section.5.3}
+\contentsline {chapter}{\numberline {6}Implementation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Algorithms}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Development Tools}{11}{section.6.2}
+\contentsline {chapter}{\numberline {7}Testing}{12}{chapter.7}
+\contentsline {section}{\numberline {7.1}Testing Methodologies}{12}{section.7.1}
+\contentsline {section}{\numberline {7.2}Unit Testing}{13}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Background Subtraction Module}{13}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Feature Extraction}{14}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}FingerTip Tracking and Gesture Recognition}{14}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Integration Testing}{15}{section.7.3}
+\contentsline {section}{\numberline {7.4}System Testing}{15}{section.7.4}
+\contentsline {chapter}{\numberline {8}Graphical User Interface}{16}{chapter.8}
+\contentsline {section}{\numberline {8.1}GUI Overview}{16}{section.8.1}
+\contentsline {section}{\numberline {8.2}Main GUI Components}{16}{section.8.2}
+\contentsline {chapter}{\numberline {9}Results}{17}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusion}{18}{chapter.10}
+\contentsline {chapter}{\numberline {11}Future Scope}{19}{chapter.11}
+\contentsline {chapter}{\numberline {12}Publication}{20}{chapter.12}
+\contentsline {chapter}{References}{21}{chapter*.6}
