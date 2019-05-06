@@ -11,6 +11,22 @@
 \usepackage{tocloft}
 \usepackage[bookmarks=false]{hyperref}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc, positioning}
+
+\usetikzlibrary{shapes.geometric, arrows}
+\definecolor{orange}{HTML}{eeeeee}
+
+\tikzstyle{process} = [rectangle, minimum width=4.4cm, minimum height=1cm, text centered, draw=black, fill=orange]
+\tikzstyle{process1} = [rectangle, rounded corners=0.5cm, minimum width=6cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
+\tikzstyle{process2} = [ font=\small, rectangle, rounded corners=0.5cm, minimum width=3cm, minimum height=1.5cm, text centered, draw=black, fill=orange, align=center]
+\tikzstyle{oval} = [ellipse, minimum width=3cm, minimum height=2cm, text centered, draw=black, fill=orange]
+\tikzstyle{oval2} = [ellipse, minimum width=2cm, minimum height=1.5cm, text centered, draw=black, fill=orange]
+
+\tikzstyle{func} = [rounded rectangle]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzstyle{overlay} = [dashed, rectangle, text centered, draw=black, align=center]
+
 
 \newlength{\mylen}
 \renewcommand{\cftfigpresnum}{\figurename\enspace}
@@ -246,13 +262,197 @@ Abstract of the project
 \section{Module Description}
 
 \chapter{Data Flow Diagram}
-\section{Level 0 DFD}
-\section{Level 1 DFD}
-\section{Level 2 DFD}
+
+\section{Level 0}
+\resizebox{\columnwidth}{!}{
+\begin{tikzpicture}[node distance=7cm]
+    \node (proc1) [oval2]{User};
+    \node (proc2) [oval2, minimum width=10mm,right of = proc1]{Gesture Recognition};
+    \node (proc3) [process1,minimum size=10 mm, right of = proc2,xshift= 10 mm]{Linux GUI Command};
+
+    \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Hand\ movement$};
+    \draw[arrow] (proc2)--(proc3) node[midway,above,rotate=0] {$Gesture Mapping$};
+%    \draw [black] ([yshift=0.2cm]proc3.west)--([yshift=0.2cm]proc3.east);
+
+\end{tikzpicture}}
+\\
+\section{Level 1}
+\resizebox{\columnwidth}{!}{
+\begin{tikzpicture}[node distance=2cm]
+    \node (proc1) [oval]{Frame Sequence};
+    \node (proc2) [process1, right of = proc1, xshift=8 cm]{\\Feature Extraction\\\\
+    Background Subtraction\\
+    and Extraction of fingertips.\\};
+    \node (proc3) [process1, below of = proc2, yshift=-3cm]{\\Gesture Recognition\\\\
+    Trace path followed by\\
+    fingertips and Compare with\\
+    predefined gestures\\};
+    \node (proc4) [process1, left of = proc3, xshift=-8cm]{\\Daemon\\\\Execute GUI function\\};
+    \draw[arrow] (proc1)--(proc2) node[midway,above,rotate=0] {$Frames$};
+    \draw[arrow] (proc2)--(proc3) node[midway,right,rotate=0]{$Fingertip\ positions$};
+    \draw[arrow] (proc3)--(proc4) node[midway,above,rotate=0] {$Gesture$};
+    \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
+    \draw [black] ([yshift=0.6cm]proc3.west)--([yshift=0.6cm]proc3.east);
+    \draw [black] ([yshift=0.2cm]proc4.west)--([yshift=0.2cm]proc4.east);
+\end{tikzpicture}}
+
+\section{Level 2}
+\resizebox{\columnwidth}{!}{
+\begin{tikzpicture}[node distance=0cm]
+    \node (proc1) [oval]{Frame Sequence};
+
+    \node (over1) [overlay, label=above:Background Subtraction and Feature Extreaction, minimum width = 11cm, minimum height = 7cm, right of = proc1, xshift=9cm]{};
+
+    \node (proc2) [process2, below=of over1.north west, xshift=2.6cm, yshift=-0.2cm]{\\Background Detection\\\\
+    The image is scanned\\
+    to detect the\\
+    non-changing parts\\};
+
+
+    \node (proc3) [process2, right of = proc2, xshift=6cm]{\\Background Removal\\\\
+    The detected\\
+    background is\\
+    removed\\};
+
+    \node (proc4) [process2, left of = proc3, xshift=-2.9cm, yshift=-4cm]{\\Object Detection\\\\
+    The fingertips are extracted from the image with\\
+    only foreground data\\};
+
+    \draw [arrow] (proc1)--(over1) node[midway,above,rotate=0] {$Frames$};
+    \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
+    \draw [black] ([yshift=0.5cm]proc3.west)--([yshift=0.5cm]proc3.east);
+    \draw [black] ([yshift=0.4cm]proc4.west)--([yshift=0.4cm]proc4.east);
+    \draw [arrow] (proc2)--(proc3) node[midway, above]{$$};
+    \draw [arrow] (proc3)--(proc4) node[midway, above]{$$};
+    \node (over2) [overlay, label={[xshift=-3.7cm]Gesture Recognition}, minimum width = 11cm, minimum height = 5.8cm, right of = over1, yshift=-8cm]{};
+
+    \node (proc5) [process2, below=of over2.north west, xshift=2.6cm, yshift=-0.2cm]{\\Object Tracking\\\\
+    Path followed by the\\
+    fingertips are computed\\};
+
+    \node (proc6) [process2, right of = proc5, xshift=6cm]{\\Thresholding\\\\
+    Detected path is\\
+    compared with existing\\
+    gesture data\\};
+
+    \node (proc7) [process2, left of = proc6, xshift=-3cm, yshift=-3cm]{\\\\\\
+    Output from both is used to find a suitable\\
+    gesture if any.\\};
+    \draw [arrow] (over1)--(over2) node[midway, right]{$Fingertip positions$};
+    \draw [black] ([yshift=0.4cm]proc5.west)--([yshift=0.4cm]proc5.east);
+    \draw [black] ([yshift=0.5cm]proc6.west)--([yshift=0.5cm]proc6.east);
+    \draw [black] ([yshift=0.5cm]proc7.west)--([yshift=0.5cm]proc7.east);
+    \draw [arrow] (proc5)--(proc6) node[midway, below]{$$};
+    \draw [arrow] (proc6)--(proc7) node[midway, below]{$$};
+
+    \node (over3) [overlay, label={[xshift=-4.7cm]Daemon}, minimum width = 11cm, minimum height = 4cm, right of = over2, yshift=-6.1cm]{};
+
+    \node (proc8) [process2, below=of over3.north west, xshift=2.6cm, yshift=-0.8cm]{\\Function Mapping\\\\
+    Function corresponding to\\
+    gesture is retrieved.\\};
+
+    \node (proc9) [process2, right of = proc8, xshift=6cm]{\\Function Execution\\\\
+    Function is executed\\};
+    \draw [arrow] (proc8)--(proc9) node[midway, below]{$$};
+
+    \draw [arrow] (over2)--(over3) node[midway, right]{$Gesture$};
+
+    \draw [black] ([yshift=0.4cm]proc8.west)--([yshift=0.4cm]proc8.east);
+    \draw [black] ([yshift=0.2cm]proc9.west)--([yshift=0.2cm]proc9.east);
+
+\end{tikzpicture}}
 
 \chapter{Implementation}
 \section{Algorithms}
+\subsection{Overall algorithm}
+\begin{itemize}
+    \item Input: A set of contiguous image frames
+    \item Output: The mapped GUI function
+    \item Method:
+    \begin{enumerate}
+        \item Calculate the foreground using MOG2 background subtraction algorithm.
+        \item Detect the fingertips using the Convex Hull algorithm.
+        \item Track the finger gesture using Continuously Adaptive Mean Shift (CAMshift) algorithm.
+        \item Save the above tracked graph to a DetectedGesture object.
+        \item Find the closest SavedGesture object and execute the GUI function.
+    \end{enumerate}
+\end{itemize}
+\subsection{Background subtraction}
+\begin{enumerate}
+    \item Purpose: To find the Region of Interest by subtracting the background from the image frame.
+    \item Input: Image frames with foreground and background.
+    \item Output: Image frames with only foreground. 
+    \item Method:
+    \begin{itemize}
+        \item Model each background pixel by a mixture of K Gaussian distributions (K = 3 to 5)
+        \item Calculate the weights of the mixture which represent the time proportions that those colours stay in the scene.
+        \item Remove the colours are which stay longer and more static.
+    \end{itemize}
+\end{enumerate}
+\subsection{Convex Hull}
+\begin{itemize}
+    \item Purpose: To find the positions of the fingertips in the image frame.
+    \item Input: Image frames with background subtracted.
+    \item Output: List of Convex Hull peaks
+    \item Method:
+    \begin{enumerate}
+        \item Threshold the image, and retrieve the points in the plane. Let's say there are P points.
+        \item Initialize p as leftmost point.
+        \item Do following while we don’t come back to the first (or leftmost) point.
+        \begin{enumerate}
+            \item The next point q is the point such that the triplet (p, q, r) is counterclockwise for any other point r.
+            \item next[p] = q (Store q as next of p in the output convex hull).
+            \item p = q (Set p as q for next iteration).
+        \end{enumerate}
+    \end{enumerate}
+\end{itemize}
+\subsection{CAMShift}
+\begin{itemize}
+    \item Purpose: To map the positions of the fingertips in the multiple frames to one fluid motion, in the form of lines/curves in a 2D plane.
+    \item Input: Sequence of frames with Convex Hull peaks.
+    \item Output: 2D plane with a set of lines/curves representing the fluid motion of the fingertips.
+    \item Method:
+    \begin{enumerate}
+        \item Set the calculation region of the probability distribution equal to the whole frame.
+        \item Choose the initial location of the two-dimensional mean shift search window.
+        \item Calculate the colour probability distribution in the 2D region centred on the search window location in an area slightly larger than the mean shift window size.
+        \item Perform the search of the maximum density probability using the mean shift parameter for convergence or for setting the number of iterations. Store the zero moment (area or size) and middle position.
+        \item For the next image frame, place the search window in the middle position fixed in step 4, and set the window size in conformity to the last moment. Go to step 3. 
+    \end{enumerate}
+\end{itemize}
+\subsection{Brute Force Matching}
+\begin{itemize}
+    \item Purpose: To match the DetectedGesture to a SavedGesture, and execute the corresponding GUI function.
+    \item Input: The feature objects encoded in the SavedFeature and DetectedFeature objects.
+    \item Output: A quantity representing the closeness of the two gestures.
+    \item Method:
+    \begin{enumerate}
+        \item For a given keypoint K1 from the first set, take every keypoint in the second set and calculate the distance.
+        \item Distance formula used is Euclidean distance. The sum of the distances on each dimension is finally used to calculate the returned quantity.
+        \item cv2.NORM2 can be used to find the BFMatch value between two sets (of points)
+        \item The Euclidean Distance sum is normalized and returned.
+    \end{enumerate}
+\end{itemize}
 \section{Development Tools}
+\subsection{Sublime Text}
+Sublime Text is a proprietary cross-platform source code editor with a Python application program-
+ming interface (API). It natively supports many programming languages and markup languages,
+and functions can be added by users with plugins, typically community-built and maintained under
+free-software licenses.
+Some of the features of Sublime Text are
+\begin{itemize}
+\item ”Goto Anything,”quick navigation to files, symbols, or lines
+\item ”Command palette” uses adaptive matching for quick keyboard invocation of arbitrary com-
+mands
+\item Simultaneous editing: simultaneously make the same interactive changes to multiple selected
+areas
+\item Python-based plugin API
+\item Project-specific preferences
+\item Extensive customizability via JSON settings files, including project-specific and platform-
+specific settings
+\item Cross platform (Windows, macOS, and Linux)
+
+\end{itemize}
 
 \chapter{Testing}
 Software testing is an investigation conducted to provide stakeholders with information about

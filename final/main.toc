@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of Figures}{iii}{figure.caption.2}
-\contentsline {chapter}{List of Tables}{iv}{figure.caption.2}
+\contentsline {chapter}{List of Figures}{iv}{figure.caption.2}
+\contentsline {chapter}{List of Tables}{v}{figure.caption.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Proposed Project}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Problem Statement}{1}{subsection.1.1.1}
@@ -41,25 +41,31 @@
 \contentsline {section}{\numberline {4.4}Libraries and Packages Used}{9}{section.4.4}
 \contentsline {section}{\numberline {4.5}Module Description}{9}{section.4.5}
 \contentsline {chapter}{\numberline {5}Data Flow Diagram}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Level 0 DFD}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Level 1 DFD}{10}{section.5.2}
-\contentsline {section}{\numberline {5.3}Level 2 DFD}{10}{section.5.3}
-\contentsline {chapter}{\numberline {6}Implementation}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Algorithms}{11}{section.6.1}
-\contentsline {section}{\numberline {6.2}Development Tools}{11}{section.6.2}
-\contentsline {chapter}{\numberline {7}Testing}{12}{chapter.7}
-\contentsline {section}{\numberline {7.1}Testing Methodologies}{12}{section.7.1}
-\contentsline {section}{\numberline {7.2}Unit Testing}{13}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Background Subtraction Module}{13}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Feature Extraction}{14}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}FingerTip Tracking and Gesture Recognition}{14}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Integration Testing}{15}{section.7.3}
-\contentsline {section}{\numberline {7.4}System Testing}{15}{section.7.4}
-\contentsline {chapter}{\numberline {8}Graphical User Interface}{16}{chapter.8}
-\contentsline {section}{\numberline {8.1}GUI Overview}{16}{section.8.1}
-\contentsline {section}{\numberline {8.2}Main GUI Components}{16}{section.8.2}
-\contentsline {chapter}{\numberline {9}Results}{17}{chapter.9}
-\contentsline {chapter}{\numberline {10}Conclusion}{18}{chapter.10}
-\contentsline {chapter}{\numberline {11}Future Scope}{19}{chapter.11}
-\contentsline {chapter}{\numberline {12}Publication}{20}{chapter.12}
-\contentsline {chapter}{References}{21}{chapter*.6}
+\contentsline {section}{\numberline {5.1}Level 0}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}Level 1}{10}{section.5.2}
+\contentsline {section}{\numberline {5.3}Level 2}{11}{section.5.3}
+\contentsline {chapter}{\numberline {6}Implementation}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Algorithms}{12}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Overall algorithm}{12}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Background subtraction}{12}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Convex Hull}{13}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}CAMShift}{13}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Brute Force Matching}{13}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Development Tools}{14}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Sublime Text}{14}{subsection.6.2.1}
+\contentsline {chapter}{\numberline {7}Testing}{15}{chapter.7}
+\contentsline {section}{\numberline {7.1}Testing Methodologies}{15}{section.7.1}
+\contentsline {section}{\numberline {7.2}Unit Testing}{16}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Background Subtraction Module}{16}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Feature Extraction}{17}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}FingerTip Tracking and Gesture Recognition}{17}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Integration Testing}{18}{section.7.3}
+\contentsline {section}{\numberline {7.4}System Testing}{18}{section.7.4}
+\contentsline {chapter}{\numberline {8}Graphical User Interface}{19}{chapter.8}
+\contentsline {section}{\numberline {8.1}GUI Overview}{19}{section.8.1}
+\contentsline {section}{\numberline {8.2}Main GUI Components}{19}{section.8.2}
+\contentsline {chapter}{\numberline {9}Results}{20}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusion}{21}{chapter.10}
+\contentsline {chapter}{\numberline {11}Future Scope}{22}{chapter.11}
+\contentsline {chapter}{\numberline {12}Publication}{23}{chapter.12}
+\contentsline {chapter}{References}{24}{chapter*.6}
