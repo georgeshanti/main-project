@@ -12,6 +12,11 @@
 \usepackage[bookmarks=false]{hyperref}
 \usepackage{graphicx}
 \usepackage{tikz}
+
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{15pt} \item[-] #1}
+}
+
 \usetikzlibrary{shapes.misc, positioning}
 
 \usetikzlibrary{shapes.geometric, arrows}
@@ -277,7 +282,30 @@ The main disadvantages we face over here is the lack of good web cams and system
 Hand Gesture GUI Control System version 1 revison 1 - A Real time dynamic Hand Gesture Recognition GUI system to improve the interaction between user and computer. The user can use his webcam to record hand gestures which our system can use to perform Linux GUI functions in realtime.
 
 \section{Document Conventions}
+\begin{itemize}
+    \item Entire document should be justified.
+    \item Convention for Main title
+\begin{itemize}
+    \item Font face: Times New Roman
+\item Font Style: Bold
+\item Font Size: 14
+\end{itemize}
+    
+\item Convention for Sub title
+\begin{itemize}
+    
+\item  Font face: Times New Roman
+\item Font Style: Bold
+\item Font Size: 12
+\end{itemize}
+\item Convention for Body
 
+\begin{itemize}
+    
+\item Font face: Times New Roman
+\item Font Size: 12
+\end{itemize}
+\end{itemize}
 
 \subsection{Intended Audience and Reading Suggestions}
 This document is intended for the developers of the system. Developers may use document to get a better understanding of the requirements of the system and the prerequisites for building the system.
@@ -288,8 +316,16 @@ The software specified has the purpose of implementing natural and easy to under
 \subsection{Overview of Developer's Responsibilities}
 The developers must design and implement the Hand Gesture Recognition System and the Control System for the GUI. Developers must determine valid gestures and mappings for each gesture to a appropriate function in the GUI of the computer. 
 
-
-
+The developer should :
+\begin{itemize}
+\item Reviewing current systems.
+\item Presenting ideas for system improvements, including cost proposals.
+\item Working closely with analysts, designers and staff.
+\item Producing detailed specifications and writing the program codes.
+\item Testing the product in controlled, real situations before going live.
+\item Preparation of training manuals for users.
+\item Maintaining the systems once they are up and running.
+\end{itemize}
 
 \newpage
 \section{Overall Description}
@@ -574,6 +610,35 @@ The product can be reused by other developers to create and maintain their own p
 
 \chapter{System Design}
 \section{System Architecture}
+\begin{tikzpicture}[node distance=5cm]
+    \node (proc1) [process] {Image Retrieval};
+    \node (proc2) [process, right of = proc1] {Background Subtraction};
+    \node (proc3) [process, right of = proc2] {Feature Extraction};
+    \node (proc4) [process, below of = proc3, yshift = 3cm] {Finger-Tip Tracking};
+    \node (proc5) [process, left of = proc4] {Gesture Recognition};
+    \node (proc6) [process, left of = proc5] {Gesture mapping};
+    \draw [arrow] (proc1) -- (proc2);
+    \draw [arrow] (proc2) -- (proc3);
+    \draw [arrow] (proc3) -- (proc4);
+    \draw [arrow] (proc4) -- (proc5);
+    \draw [arrow] (proc5) -- (proc6);
+\end{tikzpicture}
+
+\section{Use case diagram}
+\begin{center}
+    \includegraphics{usecase.png}
+\end{center}
+\section{Class diagram}
+\begin{center}
+    \includegraphics[width=14cm]{classdiagram.png}
+    \vspace{10cm}
+    \includegraphics[width=14cm]{UserClass.png}
+\end{center}
+\section{Activity diagram}
+\begin{center}
+    \includegraphics[scale=0.8]{activitydiagram.png}
+\end{center}
+
 \section{Input Design}
     In the system, the hand gesture is captured by the web cam in multiple frames. After the gesture Is
     carried out, it is recognized and the corresponding GUI command is carried out.
@@ -936,23 +1001,91 @@ grated.
 
 
 \chapter{Graphical User Interface}
+The graphical user interface (GUI ), is a type of user interface that allows users to interact with
+electronic devices through graphical icons and visual indicators such as secondary notation, instead
+of text-based user interfaces, typed command labels or text navigation. GUI's were introduced in
+reaction to the perceived steep learning curve of command-line interfaces which require commands
+to be typed on a computer keyboard.
+Designing the visual composition and temporal behavior of a GUI is an important part of
+software application programming in the area of human-computer interaction. Its goal is to enhance
+the efficiency and ease of use for the underlying logical design of a stored program, a design discipline
+named usability. Methods of user-centered design are used to ensure that the visual language
+introduced in the design is well-tailored to the tasks.
+For several decades, GUIs were controlled exclusively by a mouse and a keyboard. While these
+types of input devices are sufficient for desktop computers, they do not work as well for mobile
+devices, such as smart-phones and tablets. Therefore, mobile operating systems are designed to use
+a touchscreen interface. Many mobile devices can now be controlled by spoken commands as well.
+Because there are now many types of digital devices available, GUI's must be designed for the
+appropriate type of input. For example, a desktop operating system, such as OS X, includes a
+menu bar and windows with small icons that can be easily navigated using a mouse. A mobile OS,
+like iOS, includes larger icons and supports touch commands like swiping and pinching to zoom in
+or zoom out. Automotive interfaces are often designed to be controlled with knobs and buttons,
+and TV interfaces are built to work with a remote control. Regardless of the type of input, each of
+these interfaces are considered GUI's since they include graphical elements.
 \section{GUI Overview}
+
+For the proposed system, the GUI is built using the GTK library. We have components for Mapping out the 
+different gestures, calibrating the system, Adding and Remove Mappings to Gestures.  
+
 \section{Main GUI Components}
+
+
+\subsection{Calibrate Detection}
+    To Calibrate the colors detected which may vary from due to lighting conditions. This component allows
+    the user to refine the background subtraction module by providing an image frame of the current placement of the hand which
+    extracts the colours in the image frame.
+
+\subsection{Gesture Mapping}
+
+    This module allows to map the gestures to Linux GUI commands. Each gesture can be mapped according to 
+    the users wish. It also allows the user to remove a gesture mapping or add a new gesture mapping.
+
 
 \chapter{Results}
 Include screenshots of the project.
 
 \chapter{Conclusion}
 
+    The project "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" is a scalable solution
+    to the problem of implementing fluid Hand gesture controlled GUIs. The current Hand Gesture recognition
+    systems do not process hand gestures over multiple frames. The project is capable of detecting Hand Guestures
+    which include motion of the whole hand.
+
+
 \chapter{Future Scope}
 
-\chapter{Publication}
+% \chapter{Publication}
    
 \begin{thebibliography}{999}
 \addcontentsline{toc}{chapter}{References}
-\bibitem{}
+
+    \bibitem{} K. Oka, Y. Sato, “Real-Time Fingertip Tracking and Gesture Recognition,” IEEE Computer Graphics and Applications, pp. 64-71, 2002
+    \bibitem{} Lai, H. Y., Lai, H. J. (2014). Real-Time Dynamic Hand Gesture Recognition. 2014 International Symposium on Computer, Consumer and Control. 
+    
+    \bibitem{} Z. Ren, J. Yuan, Member, IEEE, J. Meng, Member, IEEE, and Z. Zhang, Fellow, IEEE “Robust Part-Based Hand Gesture Recognition Using Kinect Sensor,” IEEE Transactions On Multimedia, vol. 15, pp. 1110-1120, AUGUST, 2013.
+    
+    \bibitem{} Ji-Hwan Kim, Student Member, IEEE, Nguyen Duc Thang,Tae-Seong Kim, Member, IEEE Department of Biomedical Engineering,Department of Computer Engineering,Kyung Hee University,3-D Hand Motion Tracking and Gesture Recognition
+    Using a Data Glove, IEEE International Symposium on Industrial Electronics (ISlE 2009) Seoul Olympic Parktel, Seoul, Korea July 5-8, 2009
+    
+    \bibitem{} Takuro Niidome, Div. of Elec. and Comp. Eng,Yokohama National University,Rokuya Ishii, Div. of Elec. \& Comp. Eng., Yokohama National University, A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition, IECONO1: The 27th Annual Conference of the IEEE Industrial Electronics Society, 2001
+    
+    \bibitem{} X. Wu, C. Yang, Y. Wang, H. Li, and S. Xu, “An Intelligent Interactive System Based on Hand Gesture Recognition Algorithm and Kinect,” Fifth International Symposium on Computational Intelligence and Design, pp.294-298, 2012
+    
+    \bibitem{} Hayato Takahashi, Yuhki Kitazono, Integration of Hand Gesture and Multi Touch Gesture with Glove Type Device, 2016 4th Intl Conf on Applied Computing and Information Technology/3rd Intl Conf on Computational Science/Intelligence and Applied Informatics/1st Intl Conf on Big Data, Cloud Computing, Data Science \& Engineering
+    
+    \bibitem{} Hamid A. Jalab, Herman .K. Omer, Human Computer Interface Using Hand Gesture Recognition Based On Neural Network, 2015 5th National Symposium on Information Technology: Towards New Smart World (NSITNSW).
+    
+    \bibitem{} Mykyta Kovalenko, Svetlana Antoshchuk, Juergen Sieck, Real-Time Hand Tracking and Gesture Recognition Using Semantic-Probabilistic Network, 2014 UKSim-AMSS 16th International Conference on Computer Modelling and Simulation
+    
+    \bibitem{} Yee Yong Pang, Nor Azman Ismail, Phuah Leong Siang Gilbert, A Real Time Vision-Based Hand Gesture Interaction, 2010 Fourth Asia International Conference on Mathematical/Analytical Modelling and Computer Simulation
+    
+
 
 
 \end{thebibliography}
+
+
+
+
 
 \end{document}
