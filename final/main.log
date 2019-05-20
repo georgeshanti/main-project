@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  7 MAY 2019 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,6 +495,9 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \mylen=\skip106
  (/home/riza/mainprojectdoc/main-project/final/main.aux
 
+LaTeX Warning: Label `Calibrate Detection' multiply defined.
+
+
 LaTeX Warning: Label `' multiply defined.
 
 
@@ -581,27 +584,41 @@ LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
  ABD: EveryShipout initializing macros
-<logo.jpg, id=7, 320.69812pt x 324.46219pt>
+<logo.jpg, id=7, 276.03125pt x 276.03125pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 82.
-(pdftex.def)             Requested size: 93.95122pt x 95.0521pt.
+Package pdftex.def Info: logo.jpg  used on input line 83.
+(pdftex.def)             Requested size: 93.95122pt x 93.95045pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/riza/mainprojectdoc/main-project/final/logo.jpg (PNG copy)>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/riza/mainprojectdoc/main-project/final/logo.jpg>]
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
-Package pdftex.def Info: logo.jpg  used on input line 110.
-(pdftex.def)             Requested size: 86.72377pt x 87.73962pt.
+Package pdftex.def Info: logo.jpg  used on input line 111.
+(pdftex.def)             Requested size: 86.72377pt x 86.72285pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--129
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \end{titlepage}
+l.168 \end{titlepage}
                       [1]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \end{titlepage}
-                      [1] [1] (/home/riza/mainprojectdoc/main-project/final/main.toc
+l.198 \end{titlepage}
+                      [1]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [1] (/home/riza/mainprojectdoc/main-project/final/main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -611,7 +628,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...nd Software Requirements}{15}{section.4.3}
+l.34 ...}Functional Requirements}{14}{section.3.6}
                                                    [1] [2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -622,12 +639,6 @@ l.34 ...nd Software Requirements}{15}{section.4.3}
 
  [4
 
-] (/home/riza/mainprojectdoc/main-project/final/main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
-
- [5
-
 ]
 Chapter 1.
 Missing character: There is no ‚ in font cmr10!
@@ -636,8 +647,9 @@ Missing character: There is no ô in font cmr10!
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \subsection
+l.244 \subsection
                  {Proposed Solution} [1
+
 
 ] [2]
 Chapter 2.
@@ -658,111 +670,61 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [4] [5]
 Chapter 3.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 286.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 296.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 286.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 296.
  [6
 
 ] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 354--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--366
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--376
+Underfull \hbox (badness 10000) in paragraph at lines 381--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--376
+Underfull \hbox (badness 10000) in paragraph at lines 381--386
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Underfull \hbox (badness 10000) in paragraph at lines 412--414
 
  []
 
-<mainui.png, id=287, 413.29407pt x 252.945pt>
+<mainui.png, id=292, 413.29407pt x 252.945pt>
 File: mainui.png Graphic file (type png)
 <use mainui.png>
-Package pdftex.def Info: mainui.png  used on input line 405.
+Package pdftex.def Info: mainui.png  used on input line 415.
 (pdftex.def)             Requested size: 330.6357pt x 202.35626pt.
-<addnewui.png, id=288, 407.27156pt x 252.945pt>
+<addnewui.png, id=293, 407.27156pt x 252.945pt>
 File: addnewui.png Graphic file (type png)
 <use addnewui.png>
-Package pdftex.def Info: addnewui.png  used on input line 407.
+Package pdftex.def Info: addnewui.png  used on input line 417.
 (pdftex.def)             Requested size: 325.81767pt x 202.35626pt.
 [10 </home/riza/mainprojectdoc/main-project/final/mainui.png (PNG copy)> </home/riza/mainprojectdoc/main-project/final/addnewui.png (PNG copy)>] [11]
-Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--431
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 444--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
-
- []
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-[12
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 445--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--472
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--472
-
- []
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 493--496
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--503
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
 
  []
 
@@ -773,108 +735,129 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--515
+Underfull \hbox (badness 10000) in paragraph at lines 458--463
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--515
+Underfull \hbox (badness 10000) in paragraph at lines 458--463
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 530--537
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--537
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 478--485
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--537
+Underfull \hbox (badness 10000) in paragraph at lines 478--485
 
  []
 
-[16]
-<start.png, id=320, 542.025pt x 577.15625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--485
+
+ []
+
+[13]
+<start.png, id=312, 542.025pt x 577.15625pt>
 File: start.png Graphic file (type png)
 <use start.png>
-Package pdftex.def Info: start.png  used on input line 550.
+Package pdftex.def Info: start.png  used on input line 498.
 (pdftex.def)             Requested size: 271.01183pt x 288.57741pt.
- [17 </home/riza/mainprojectdoc/main-project/final/start.png>]
-<add.png, id=327, 401.5pt x 446.66875pt>
+ [14 </home/riza/mainprojectdoc/main-project/final/start.png>]
+<add.png, id=319, 401.5pt x 446.66875pt>
 File: add.png Graphic file (type png)
 <use add.png>
-Package pdftex.def Info: add.png  used on input line 559.
+Package pdftex.def Info: add.png  used on input line 507.
 (pdftex.def)             Requested size: 200.7495pt x 223.33382pt.
-<remove.png, id=328, 396.48125pt x 351.3125pt>
+<remove.png, id=320, 396.48125pt x 351.3125pt>
 File: remove.png Graphic file (type png)
 <use remove.png>
-Package pdftex.def Info: remove.png  used on input line 568.
+Package pdftex.def Info: remove.png  used on input line 516.
 (pdftex.def)             Requested size: 198.24013pt x 175.6558pt.
- [18 </home/riza/mainprojectdoc/main-project/final/add.png>]
-<modify.png, id=334, 396.48125pt x 351.3125pt>
+ [15 </home/riza/mainprojectdoc/main-project/final/add.png>]
+<modify.png, id=326, 396.48125pt x 351.3125pt>
 File: modify.png Graphic file (type png)
 <use modify.png>
-Package pdftex.def Info: modify.png  used on input line 576.
+Package pdftex.def Info: modify.png  used on input line 524.
 (pdftex.def)             Requested size: 198.24013pt x 175.6558pt.
-<camera.png, id=335, 396.48125pt x 351.3125pt>
+<camera.png, id=327, 396.48125pt x 351.3125pt>
 File: camera.png Graphic file (type png)
 <use camera.png>
-Package pdftex.def Info: camera.png  used on input line 585.
+Package pdftex.def Info: camera.png  used on input line 533.
 (pdftex.def)             Requested size: 198.24013pt x 175.6558pt.
- [19 </home/riza/mainprojectdoc/main-project/final/remove.png> </home/riza/mainprojectdoc/main-project/final/modify.png>] [20 </home/riza/mainprojectdoc/main-project/final/camera.png>]
-Chapter 5.
-<usecase.png, id=347, 320.69812pt x 324.46219pt>
+ [16 </home/riza/mainprojectdoc/main-project/final/remove.png> </home/riza/mainprojectdoc/main-project/final/modify.png>] [17 </home/riza/mainprojectdoc/main-project/final/camera.png>]
+Chapter 4.
+<usecase.png, id=340, 320.69812pt x 324.46219pt>
 File: usecase.png Graphic file (type png)
 <use usecase.png>
-Package pdftex.def Info: usecase.png  used on input line 629.
+Package pdftex.def Info: usecase.png  used on input line 577.
 (pdftex.def)             Requested size: 320.69733pt x 324.46138pt.
-[21
+[18
 
 ]
-<classdiagram.png, id=352, 582.67688pt x 371.88937pt>
+<classdiagram.png, id=345, 582.67688pt x 371.88937pt>
 File: classdiagram.png Graphic file (type png)
 <use classdiagram.png>
-Package pdftex.def Info: classdiagram.png  used on input line 633.
+Package pdftex.def Info: classdiagram.png  used on input line 581.
 (pdftex.def)             Requested size: 398.33858pt x 254.24332pt.
-<UserClass.png, id=353, 772.8875pt x 491.8375pt>
+<UserClass.png, id=346, 772.8875pt x 491.8375pt>
 File: UserClass.png Graphic file (type png)
 <use UserClass.png>
-Package pdftex.def Info: UserClass.png  used on input line 635.
+Package pdftex.def Info: UserClass.png  used on input line 583.
 (pdftex.def)             Requested size: 398.33858pt x 253.49051pt.
- [22 </home/riza/mainprojectdoc/main-project/final/usecase.png (PNG copy)>] [23 </home/riza/mainprojectdoc/main-project/final/classdiagram.png (PNG copy)> </home/riza/mainprojectdoc/main-project/final/UserClass.png>]
-<activitydiagram.png, id=364, 592.46344pt x 474.27188pt>
+ [19 </home/riza/mainprojectdoc/main-project/final/usecase.png (PNG copy)>] [20 </home/riza/mainprojectdoc/main-project/final/classdiagram.png (PNG copy)> </home/riza/mainprojectdoc/main-project/final/UserClass.png>]
+<activitydiagram.png, id=356, 592.46344pt x 474.27188pt>
 File: activitydiagram.png Graphic file (type png)
 <use activitydiagram.png>
-Package pdftex.def Info: activitydiagram.png  used on input line 639.
+Package pdftex.def Info: activitydiagram.png  used on input line 587.
 (pdftex.def)             Requested size: 473.97139pt x 379.41801pt.
 
-Overfull \hbox (4.21637pt too wide) in paragraph at lines 639--640
+Overfull \hbox (4.21637pt too wide) in paragraph at lines 587--588
  [] 
  []
 
-[24 </home/riza/mainprojectdoc/main-project/final/activitydiagram.png (PNG copy)>]
+[21 </home/riza/mainprojectdoc/main-project/final/activitydiagram.png (PNG copy)>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+<centroid.png, id=361, 437.635pt x 158.5925pt>
+File: centroid.png Graphic file (type png)
+<use centroid.png>
+Package pdftex.def Info: centroid.png  used on input line 634.
+(pdftex.def)             Requested size: 113.81102pt x 41.24274pt.
+ [22 </home/riza/mainprojectdoc/main-project/final/centroid.png>] [23]
+Chapter 5.
 
-Overfull \hbox (1.87639pt too wide) in paragraph at lines 683--688
-\OT1/cmr/m/n/10.95 cv.camShift() is the func-tion that is used. Con-tin-u-ously Adap-tive Mean Shift Al-go-rithm (CAMShift)
+Underfull \hbox (badness 10000) in paragraph at lines 654--666
+
  []
 
-[25] [26]
+[24
+
+] [25]
 Chapter 6.
+[26
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--721
-
- []
-
-[27
-
-] [28]
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [27]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [28]
 Chapter 7.
 [29
 
@@ -882,62 +865,76 @@ Chapter 7.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [30]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [31]
-Chapter 8.
-[32
-
-]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-<backgroundtesting.png, id=428, 1279.78125pt x 562.1pt>
+<backgroundtesting.png, id=426, 1279.78125pt x 562.1pt>
 File: backgroundtesting.png Graphic file (type png)
 <use backgroundtesting.png>
-Package pdftex.def Info: backgroundtesting.png  used on input line 956.
+Package pdftex.def Info: backgroundtesting.png  used on input line 903.
 (pdftex.def)             Requested size: 426.79134pt x 187.44911pt.
- [33 </home/riza/mainprojectdoc/main-project/final/backgroundtesting.png>]
-<featuretest.png, id=434, 1264.725pt x 557.08125pt>
+ [30 </home/riza/mainprojectdoc/main-project/final/backgroundtesting.png>]
+<featuretest.png, id=432, 1264.725pt x 557.08125pt>
 File: featuretest.png Graphic file (type png)
 <use featuretest.png>
-Package pdftex.def Info: featuretest.png  used on input line 967.
+Package pdftex.def Info: featuretest.png  used on input line 914.
 (pdftex.def)             Requested size: 426.79134pt x 187.98555pt.
-<featuretest2.png, id=435, 1264.725pt x 558.085pt>
+<featuretest2.png, id=433, 1264.725pt x 558.085pt>
 File: featuretest2.png Graphic file (type png)
 <use featuretest2.png>
-Package pdftex.def Info: featuretest2.png  used on input line 969.
+Package pdftex.def Info: featuretest2.png  used on input line 916.
 (pdftex.def)             Requested size: 426.79134pt x 188.32426pt.
-<gesture.png, id=436, 981.6675pt x 568.1225pt>
+<gesture.png, id=434, 981.6675pt x 568.1225pt>
 File: gesture.png Graphic file (type png)
 <use gesture.png>
-Package pdftex.def Info: gesture.png  used on input line 978.
+Package pdftex.def Info: gesture.png  used on input line 925.
 (pdftex.def)             Requested size: 426.79134pt x 246.99258pt.
- [34 </home/riza/mainprojectdoc/main-project/final/featuretest.png> </home/riza/mainprojectdoc/main-project/final/featuretest2.png>] [35 </home/riza/mainprojectdoc/main-project/final/gesture.png>]
-Chapter 9.
-[36
-
-] [37]
-Chapter 10.
-[38
+ [31 </home/riza/mainprojectdoc/main-project/final/featuretest.png> </home/riza/mainprojectdoc/main-project/final/featuretest2.png>] [32 </home/riza/mainprojectdoc/main-project/final/gesture.png>]
+Chapter 8.
+<1.png, id=446, 1085.05376pt x 720.6925pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 985.
+(pdftex.def)             Requested size: 398.33858pt x 264.57364pt.
+[33
 
 ]
-Chapter 11.
+<2.png, id=451, 1091.07625pt x 723.70375pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 994.
+(pdftex.def)             Requested size: 398.33858pt x 264.2104pt.
+ [34 </home/riza/mainprojectdoc/main-project/final/1.png>] [35 </home/riza/mainprojectdoc/main-project/final/2.png>]
+Chapter 9.
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 1001.
+(pdftex.def)             Requested size: 398.33858pt x 264.57364pt.
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 1007.
+(pdftex.def)             Requested size: 398.33858pt x 264.2104pt.
+[36
+
+]
+<3.png, id=467, 1087.06125pt x 728.7225pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 1013.
+(pdftex.def)             Requested size: 398.33858pt x 267.03229pt.
+<4.png, id=468, 1371.1225pt x 770.88pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 1019.
+(pdftex.def)             Requested size: 398.33858pt x 223.9494pt.
+<5.png, id=469, 1371.1225pt x 770.88pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 1025.
+(pdftex.def)             Requested size: 398.33858pt x 223.9494pt.
+ [37 </home/riza/mainprojectdoc/main-project/final/3.png>] [38 </home/riza/mainprojectdoc/main-project/final/4.png> </home/riza/mainprojectdoc/main-project/final/5.png>]
+Chapter 10.
 [39
 
 ]
-Chapter 12.
+Chapter 11.
 [40
 
 ]
@@ -965,72 +962,72 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has be
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1085 \end{thebibliography}
+l.1071 \end{thebibliography}
                             ] [42pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1091 \end{document}
+l.1077 \end{document}
                      ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1091.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1091.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1077.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1077.
  (/home/riza/mainprojectdoc/main-project/final/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1091.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1091.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1077.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1077.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1091.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1077.
  ) 
 Here is how much of TeX's memory you used:
- 18436 strings out of 494847
- 356194 string characters out of 6179081
- 429838 words of memory out of 5000000
- 21266 multiletter control sequences out of 15000+600000
- 9941 words of font info for 35 fonts, out of 8000000 for 9000
+ 18477 strings out of 494847
+ 356652 string characters out of 6179081
+ 430457 words of memory out of 5000000
+ 21297 multiletter control sequences out of 15000+600000
+ 10240 words of font info for 36 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  55i,12n,58p,1514b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/riza/mainprojectdoc/main-project/final/main.pdf (51 pages, 981078 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /home/riza/mainprojectdoc/main-project/final/main.pdf (50 pages, 3858747 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 454 compressed objects within 5 object streams
- 178 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

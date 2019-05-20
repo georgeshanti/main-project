@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{iv}{figure.caption.2}
-\contentsline {chapter}{List of Tables}{v}{figure.caption.2}
+\contentsline {chapter}{List of Tables}{1}{figure.caption.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Proposed Project}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Problem Statement}{1}{subsection.1.1.1}
@@ -28,65 +28,62 @@
 \contentsline {subsection}{\numberline {3.4.2}Hardware Interfaces}{10}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Software Interfaces}{11}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Communications Interfaces}{11}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Hardware and Software Requirements}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hardware Requirements}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Software Requirements}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hardware and Software Requirements}{15}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Hardware Requirements}{15}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Software Requirements}{15}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Functional Requirements}{17}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Start/Stop the Hand Gesture Daemon}{17}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Add new gestures}{18}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Remove gestures}{18}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Modify Gestures}{19}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Choose webcam}{19}{subsection.4.4.5}
-\contentsline {section}{\numberline {4.5}Non-functional Requirements}{20}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Performance Requirements}{20}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Safety Requirements}{20}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Security Requirements}{20}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Software Quality Attributes}{20}{subsection.4.5.4}
-\contentsline {section}{\numberline {4.6}Other Requirements}{20}{section.4.6}
-\contentsline {chapter}{\numberline {5}System Design}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}System Architecture}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Use case diagram}{22}{section.5.2}
-\contentsline {section}{\numberline {5.3}Class diagram}{23}{section.5.3}
-\contentsline {section}{\numberline {5.4}Activity diagram}{24}{section.5.4}
-\contentsline {section}{\numberline {5.5}Input Design}{24}{section.5.5}
-\contentsline {section}{\numberline {5.6}Libraries and Packages Used}{24}{section.5.6}
-\contentsline {section}{\numberline {5.7}Module Description}{24}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Module 1 - Image Retrieval}{24}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Module 2 - Background Subtraction}{25}{subsection.5.7.2}
-\contentsline {subsection}{\numberline {5.7.3}Module 3 - Feature Extraction}{25}{subsection.5.7.3}
-\contentsline {subsection}{\numberline {5.7.4}Module 4 - Finger-Tip Tracking}{25}{subsection.5.7.4}
-\contentsline {subsection}{\numberline {5.7.5}Module 5 - Gesture Recognition}{25}{subsection.5.7.5}
-\contentsline {subsection}{\numberline {5.7.6}Module 6 - Gesture Mapping}{26}{subsection.5.7.6}
-\contentsline {chapter}{\numberline {6}Data Flow Diagram}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Level 0}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Level 1}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Level 2}{28}{section.6.3}
-\contentsline {chapter}{\numberline {7}Implementation}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Algorithms}{29}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Overall algorithm}{29}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Background subtraction}{29}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Convex Hull}{30}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}CAMShift}{30}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Brute Force Matching}{30}{subsection.7.1.5}
-\contentsline {section}{\numberline {7.2}Development Tools}{31}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Sublime Text}{31}{subsection.7.2.1}
-\contentsline {chapter}{\numberline {8}Testing}{32}{chapter.8}
-\contentsline {section}{\numberline {8.1}Testing Methodologies}{32}{section.8.1}
-\contentsline {section}{\numberline {8.2}Unit Testing}{33}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Background Subtraction Module}{33}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Feature Extraction}{34}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}FingerTip Tracking and Gesture Recognition}{34}{subsection.8.2.3}
-\contentsline {section}{\numberline {8.3}Integration Testing}{35}{section.8.3}
-\contentsline {section}{\numberline {8.4}System Testing}{35}{section.8.4}
-\contentsline {chapter}{\numberline {9}Graphical User Interface}{36}{chapter.9}
-\contentsline {section}{\numberline {9.1}GUI Overview}{36}{section.9.1}
-\contentsline {section}{\numberline {9.2}Main GUI Components}{36}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Calibrate Detection}{36}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Gesture Mapping}{37}{subsection.9.2.2}
-\contentsline {chapter}{\numberline {10}Results}{38}{chapter.10}
-\contentsline {chapter}{\numberline {11}Conclusion}{39}{chapter.11}
-\contentsline {chapter}{\numberline {12}Future Scope}{40}{chapter.12}
-\contentsline {chapter}{References}{41}{chapter*.6}
+\contentsline {section}{\numberline {3.5}Hardware and Software Requirements}{12}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Hardware Requirements}{12}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Software Requirements}{12}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Functional Requirements}{14}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Start/Stop the Hand Gesture Daemon}{14}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Add new gestures}{15}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Remove gestures}{15}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Modify Gestures}{16}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Choose webcam}{16}{subsection.3.6.5}
+\contentsline {section}{\numberline {3.7}Non-functional Requirements}{17}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Performance Requirements}{17}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Safety Requirements}{17}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Security Requirements}{17}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.4}Software Quality Attributes}{17}{subsection.3.7.4}
+\contentsline {section}{\numberline {3.8}Other Requirements}{17}{section.3.8}
+\contentsline {chapter}{\numberline {4}System Design}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Architecture}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Use case diagram}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Class diagram}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Activity diagram}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}Input Design}{21}{section.4.5}
+\contentsline {section}{\numberline {4.6}Libraries and Packages Used}{21}{section.4.6}
+\contentsline {section}{\numberline {4.7}Module Description}{21}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Module 1 - Image Retrieval}{21}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Module 2 - Background Subtraction}{22}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Module 3 - Feature Extraction}{22}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Module 4 - Finger-Tip Tracking}{22}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}Module 5 - Gesture Recognition}{22}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.6}Module 6 - Gesture Mapping}{23}{subsection.4.7.6}
+\contentsline {chapter}{\numberline {5}Data Flow Diagram}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Level 0}{24}{section.5.1}
+\contentsline {section}{\numberline {5.2}Level 1}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Level 2}{25}{section.5.3}
+\contentsline {chapter}{\numberline {6}Implementation}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}Algorithms}{26}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Overall algorithm}{26}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Background subtraction}{26}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Convex Hull}{27}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Brute Force Matching}{27}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Brute Force Matching}{27}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Development Tools}{28}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Sublime Text}{28}{subsection.6.2.1}
+\contentsline {chapter}{\numberline {7}Testing}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}Testing Methodologies}{29}{section.7.1}
+\contentsline {section}{\numberline {7.2}Unit Testing}{30}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Background Subtraction Module}{30}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Feature Extraction}{31}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}FingerTip Tracking and Gesture Recognition}{31}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Integration Testing}{32}{section.7.3}
+\contentsline {section}{\numberline {7.4}System Testing}{32}{section.7.4}
+\contentsline {chapter}{\numberline {8}Graphical User Interface}{33}{chapter.8}
+\contentsline {section}{\numberline {8.1}GUI Overview}{33}{section.8.1}
+\contentsline {section}{\numberline {8.2}Main GUI Components}{33}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Calibrate Detection}{33}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Gesture Mapping}{34}{subsection.8.2.2}
+\contentsline {chapter}{\numberline {9}Results}{36}{chapter.9}
+\contentsline {chapter}{\numberline {10}Conclusion}{39}{chapter.10}
+\contentsline {chapter}{\numberline {11}Future Scope}{40}{chapter.11}
+\contentsline {chapter}{References}{41}{chapter*.14}

@@ -5,11 +5,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Background Subtraction Module\relax }}{30}{figure.caption.4}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Feature Extraction Module\relax }}{31}{figure.caption.5}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Finger Tip Tracking and Gesture Recognition\relax }}{32}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Background Subtraction Module\relax }}{33}{figure.caption.3}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Feature Extraction Module\relax }}{34}{figure.caption.4}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Finger Tip Tracking and Gesture Recognition\relax }}{35}{figure.caption.5}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Calibrate Detection\relax }}{34}{figure.caption.7}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Map Gesture\relax }}{35}{figure.caption.8}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Calibrate Detection\relax }}{36}{figure.caption.9}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Add Gesture\relax }}{37}{figure.caption.10}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Remove Gesture\relax }}{37}{figure.caption.11}
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Executed Gesture 4 Finger Up swipe - a\relax }}{38}{figure.caption.12}
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Executed Gesture 4 Finger Up swipe - b\relax }}{38}{figure.caption.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
