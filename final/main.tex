@@ -178,15 +178,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx\= xxxxxxxxxxxxxxxxxx\= \kill
 
 This project would not have been possible without the kind support and help of many individuals. We would like to extend our sincere thanks to all of them.
   
-First of all, We would like to thank our esteemed Principal, Prof. (Dr.) Vinu Thomas, for his guidance and support in maintaining a calm and refreshing environment to work in and also for providing the facilities that this work demanded.
+First of all, we would like to thank our esteemed Principal, Prof. (Dr.) Vinu Thomas, for his guidance and support in maintaining a calm and refreshing environment to work in and also for providing the facilities that this work demanded.
   
 We are highly indebted to our Project Coordinator, Dr. Priya S, Professor, and Manilal D L, Head of the Department and Associate Professor for their guidance, support and constant supervision throughout the duration of the work as well as for providing all the necessary information and facilities that this work demanded.
 
-We would like to thank our Project Guide,Asst. Professor Sheena K.V for her support and valuable insights and also for helping me out in correcting any mistakes that were made during the course of the work. 
+We would like to thank our Project Guide, Asst. Professor Sheena K.V for her support and valuable insights and also for helping us out in correcting any mistakes that were made during the course of the work. 
   
-We offer our sincere gratitude to all our friends and peers for their support and encouragement that helped me get through the tough phases during the course of this work.
+We offer our sincere gratitude to all our friends and peers for their support and encouragement that helped us get through the tough phases during the course of this work.
   
-Last but not the least, we thank the Almighty God for guiding me through and enabling us to complete the work within the specified time.
+Last but not the least, we thank the Almighty God for guiding us through and enabling us to complete the work within the specified time.
 \vspace{.25in}
 
 \vspace{.25in}
@@ -224,7 +224,7 @@ The purpose of this project is to build an alternative to conventional input dev
 
 For decades the mouse and keyboard have been the primary choice of input device to use computers. We propose a complete methodology for controlling the operating system using fluid movement of hand gestures using the web camera instead of the conventional mouse. This can have wide range of applications.
 
-Evolution of ubiquitous computing, current user interaction approaches with keyboard, mouse and pen are not sufficient for the still widening spectrum of Human computer interaction. Gloves and sensor based trackers are unwieldy,constraining and uncomfortable to use. Due to the limitation of these devices the useable command set based diligences is also limited. Direct use of hands as an input device is an innovative method for providing natural Human Computer Interaction which has its inheritance from text based interfaces through 2D graphical-based interfaces, multimedia-supported interfaces, to full-fledged multi participant Virtual Environment (VE) systems. The proposed system will allow users to manipulate his operating system’s GUI with his/her hands to do virtually anything. From moving around elements on the GUI such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The research effort centralizes on the efforts of implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in virtual environment using hand gestures.
+Evolution of ubiquitous computing, current user interaction approaches with keyboard, mouse and pen are not sufficient for the still widening spectrum of human-computer interaction. Gloves and sensor based trackers are unwieldy, constraining and uncomfortable to use. Due to the limitation of these devices the useable command set based diligences is also limited. Direct use of hands as an input device is an innovative method for providing natural Human Computer Interaction which has its inheritance from text based interfaces through 2D graphical-based interfaces, multimedia-supported interfaces, to full-fledged multi participant Virtual Environment (VE) systems. The proposed system will allow users to manipulate his operating system’s GUI with his/her hands to do virtually anything. From moving around elements on the GUI such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The project centralizes on the efforts of implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in virtual environment using hand gestures.
 
 The prototype architecture of the application comprises of a central computational module that applies the brute force matching technique for recognizing the gestures. Various image processing algorithms have been used to identify and track the hand. This hand gesture recognition technique aims to substitute the use of mouse for interaction with the virtual objects. This will be useful to promote controlling applications like virtual games, browsing images etc in virtual environment using hand gestures.
 
@@ -235,41 +235,41 @@ The prototype architecture of the application comprises of a central computation
 Existing pointer input devices such as the mouse and trackpad require a physical interface to use them. Solutions to this in the form of hand gesture recognition systems have been introduced but existing systems recognize only single frame hand gestures (which do not involve any sort of movement) and are not very responsive. More advanced systems which track such movement require specialized hardware, which is very costly.
 
 \subsection{Proposed Solution}
-The proposed solution is "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" which uses the standard webcam built in laptops to record multiple frame hand gestures and execute corresponding GUI commands in the OS. The system uses image processing techniques which are fast and robust to track and recognize the different hand gestures.
+The proposed solution is "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" which uses the standard webcam built in laptops to record multiple frame hand gestures and execute corresponding GUI commands in the Linux OS. The system uses image processing techniques which are fast and robust, to track and recognize the different hand gestures.
 
 
 
 \chapter{System Study Report}
 \section{Literature Survey}
 \begin{enumerate}
-    \item K. Oka, Y. Sato, Real-Time Fingertip Tracking and Gesture Recognition \cite{1} - Their method uses a filtering technique, in addition to detecting fingertips  in  each  image  frame,  to predict fingertip locations in successive image frames and to examine the correspondences between the predicted locations and detected fingertips. This lets us obtain multiple fingertips’ trajectories in real time and improves fingertip tracking. This method can track multiple fingertips reliably even on a complex background under changing lighting conditions without invasive devices or color markers.
+    \item K. Oka, Y. Sato, Real-Time Fingertip Tracking and Gesture Recognition \cite{1} - Their method uses a filtering technique, in addition to detecting fingertips  in  each  image  frame,  to predict fingertip locations in successive image frames and to examine the correspondences between the predicted locations and detected fingertips. This lets us obtain multiple fingertip trajectories in real time and improves fingertip tracking. This method can track multiple fingertips reliably even on a complex background under changing lighting conditions without invasive devices or color markers.
     
-    \item Lai, H. Y., Lai, H. J., Real-Time Dynamic Hand Gesture Recognition \cite{2} - The  eleven  kinds  of  hand  gestures have  been  dynamic  recognized,  which  represent  the  number from  one  to  nine.  The  dynamic  images  are  caught  by  a  dynamic video.  We  use  the  YCbCr  color  space  transformation  to  detect the  skin  color  and  to  find  the  hand  contour from  the  complex background. Convex defect character points of the hand contour are  defined,  and  the  finger  angles  and  fingertip  positions  are calculated to recognize the hand gestures. The OpenCV is used to perform our research. Ten tested users produce 330 cases to recognize  eleven  hand  gestures,  and  each  hand  gestures  have  three different poses of hand gestures.  The accurate recognition rate is 95.1\%.
+    \item Lai, H. Y., Lai, H. J., Real-Time Dynamic Hand Gesture Recognition \cite{2} - The  eleven  kinds  of  hand  gestures have  been  dynamic  recognized,  which  represent  the  numbers from  one  to  nine.  The  dynamic  images  are  caught  by  a  dynamic video.  They  use  the  YCbCr  color  space  transformation  to  detect the  skin  color  and  to  find  the  hand  contour from  the  complex background. Convex defect character points of the hand contour are  defined,  and  the  finger  angles  and  fingertip  positions  are calculated to recognize the hand gestures. OpenCV is used to perform their research. Ten tested users produce 330 cases to recognize  eleven  hand  gestures,  and  each  hand  gesture  has  three different poses of hand gestures.  The accurate recognition rate is 95.1\%.
 
-    \item Z. Ren, J. Yuan, J. Meng , Z. Zhang, Robust Part-Based Hand Gesture Recognition Using Kinect Sensor \cite{3} - The recently developed depth sensors, e.g., the Kinect sensor, have provided new opportunities for human-computer interaction (HCI). Although great progress has been made by leveraging the Kinect sensor, e.g., in human body tracking, face recognition and human action recognition, robust hand gesture recognition remains an open problem. Compared to the entire human body, the hand is a smaller object with more complex articulations and more easily affected by segmentation errors. It is thus a very challenging problem to recognize hand gestures. This paper focuses on building a robust part-based hand gesture recognition system using Kinect sensor. To handle the noisy hand shapes obtained from the Kinect sensor, we propose a novel distance metric, Finger-Earth Mover's Distance (FEMD), to measure the dissimilarity between hand shapes. As it only matches the finger parts while not the whole hand, it can better distinguish the hand gestures of slight differences. The extensive experiments demonstrate that our hand gesture recognition system is accurate (a 93.2\% mean accuracy on a challenging 10-gesture dataset), efficient (average 0.0750 s per frame), robust to hand articulations, distortions and orientation or scale changes, and can work in uncontrolled environments (cluttered backgrounds and lighting conditions)
+    \item Z. Ren, J. Yuan, J. Meng , Z. Zhang, Robust Part-Based Hand Gesture Recognition Using Kinect Sensor \cite{3} - The recently developed depth sensors, e.g., the Kinect sensor, have provided new opportunities for human-computer interaction (HCI). Although great progress has been made by leveraging the Kinect sensor, e.g., in human body tracking, face recognition and human action recognition, robust hand gesture recognition remains an open problem. Compared to the entire human body, the hand is a smaller object with more complex articulations and more easily affected by segmentation errors. It is thus a very challenging problem to recognize hand gestures. This paper focuses on building a robust part-based hand gesture recognition system using Kinect sensor. To handle the noisy hand shapes obtained from the Kinect sensor, they propose a novel distance metric, Finger-Earth Mover's Distance (FEMD), to measure the dissimilarity between hand shapes. As it only matches the finger parts while not the whole hand, it can better distinguish the hand gestures with slight differences. The extensive experiments demonstrate that their hand gesture recognition system is accurate (a 93.2\% mean accuracy on a challenging 10-gesture dataset), efficient (average 0.0750 s per frame), robust to hand articulations, distortions and orientation or scale changes, and can work in uncontrolled environments (cluttered backgrounds and lighting conditions).
     
-    \item Ji-Hwan Kim,Nguyen Duc Thang,Tae-Seong Kim, 3-D Hand Motion Tracking and Gesture Recognition Using a Data Glove \cite{4} - Developed a 3-D hand motion tracking and gesture recognition system via a data glove (namely the KHU-l data glove consisting of three tri-axis accelerometer sensors, one controller, and one Bluetooth). The KHU-l data glove is capable of transmitting hand motion signals to a PC through wireless communication via Bluetooth. Also we have implemented a 3-D digital hand model for hand motion tracking and recognition. The implemented 3-D digital hand model is based on the kinematic chain theory utilizing ellipsoids and joints. Finally, we have utilized a rule-based algorithm to recognize simple hand gestures namely scissor, rock, and paper using the 3-D digital hand model and the KHU-l data glove.
+    \item Ji-Hwan Kim, Nguyen Duc Thang, Tae-Seong Kim, 3-D Hand Motion Tracking and Gesture Recognition Using a Data Glove \cite{4} - Developed a 3-D hand motion tracking and gesture recognition system via a data glove (namely the KHU-l data glove consisting of three tri-axis accelerometer sensors, one controller, and one Bluetooth). The KHU-l data glove is capable of transmitting hand motion signals to a PC through wireless communication via Bluetooth. Also they have implemented a 3-D digital hand model for hand motion tracking and recognition. The implemented 3-D digital hand model is based on the kinematic chain theory utilizing ellipsoids and joints. Finally, they have utilized a rule-based algorithm to recognize simple hand gestures namely scissor, rock, and paper using the 3-D digital hand model and the KHU-l data glove.
     
-    \item Takuro Niidome, Rokuya Ishii, A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition \cite{5} - A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition - An algorithm of hand-shape recognition and applies to a Graphical User Interface (GUI) support system for a sight handicapped person. This algorithm is to recognize the angle of a hand and ten hand-shapes. As one application of this algorithm, we implement a system in which the angle of a hand controls a reading point in a text on a screen in real time, and a text is read out with a sound syntheses software. Further, in this system, more complicated directions to control a text reader can be done by recognized hand-shapes
+    \item Takuro Niidome, Rokuya Ishii, A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition \cite{5} - A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition - An algorithm of hand-shape recognition and applies to a Graphical User Interface (GUI) support system for a sight handicapped person. This algorithm is to recognize the angle of a hand and ten hand-shapes. As one application of this algorithm, they implement a system in which the angle of a hand controls a reading point in a text on a screen in real time, and a text is read out with a sound syntheses software. Further, in this system, more complicated directions to control a text reader can be done by recognized hand-shapes
     
     \item X. Wu, C. Yang, Y. Wang, H. Li, and S. Xu, "An Intelligent Interactive System Based on Hand Gesture Recognition Algorithm and Kinect" \cite{6} - A cascade control algorithm integrating electromyography bio-feedback into hand gesture recognition is proposed. The outer loop is the trajectory motion tracking with Kinect-based gesture decoding classifier, and the inner loop is torque control with electromyography bio-feedback in the real time. This proposed method improves the tracking accuracy. The tracking error is effectively reduced from 70.56 to 28.07 in the simulation experiment.
     
-    \item Hayato Takahashi, Yuhki Kitazono, Integrated multi-touch gesture with hand gesture and  make new input method. \cite{7} - Multi-touch gesture and hand gesture have been studied separately, however, these could be integrated, and it would be new interaction way for computer. We made a large scale multi-touch screen by FTIR method that uses infrared ray to detect the touched point, and a hand gesture recognition device with sensors, pressure  sensor  and  bend  sensor.  In  the  end,  we  integrated  the input  information  to  interact  with  computer. User can input coordinate by touching, and simultaneously input action by performing hand gesture.
+    \item Hayato Takahashi, Yuhki Kitazono, Integrated multi-touch gesture with hand gesture and  make new input method. \cite{7} - Multi-touch gesture and hand gesture have been studied separately, however, these could be integrated, and it would be a new interaction way for computer. They made a large scale multi-touch screen by FTIR method that uses infrared ray to detect the touched point, and a hand gesture recognition device with sensors, pressure  sensor  and  bend  sensor.  In  the  end,  they  integrated  the input  information  to  interact  with  computer. User can input coordinate by touching, and simultaneously input action by performing hand gesture.
     
     \item Hamid A. Jalab, Herman .K. Omer, Human Computer Interface Using Hand Gesture Recognition Based On Neural Network, A hand gesture interface for controlling media player using neural network. \cite{8} - The proposed algorithm recognizes a set of four specific hand gestures, namely: Play, Stop, Forward, and Reverse. The algorithm is based on four phases, Image acquisition, Hand segmentation, Features extraction, and Classification. A frame from the webcam camera is captured, and then skin detection is used to segment skin regions from background pixels. A new image is created containing hand boundary. Hand shape features extraction, are used to describe the hand gesture. An artificial neural network has been utilized as a gesture classifier, as well. The proposed algorithm develops an alternative input device to control the media player, and also offers different gesture commands and can be useful in real-time applications. Comparisons with other hand gesture recognition systems have revealed that our system shows better performance in terms accuracy.
     
-    \item Mykyta Kovalenko, Svetlana Antoshchuk, Juergen Sieck, Real-Time Hand Tracking and Gesture Recognition Using Semantic-Probabilistic Network \cite{9} - A system for real-time hand gesture  recognition  for use  as  a  human-computer  interface.  Firstly,   hand   detection   is   performed   using   a   Viola-Jones   algorithm.  We  use  the  Brute Force Matching  to  track  the  position  of  each  detected  hand  in  each  video  frame.  The  hand  contour  is  then  extracted  using  a  Border  Following  algorithm,  which  is  preceded  by  skin-colour   thresholding, performed   in   HSV   colour   space.   Finally,  a  semantic-probabilistic  network  is  introduced,  which  uses  an  ontological  gesture  model  and  Bayesian  network  for  gesture  recognition.  We  then  demonstrate  the  effectiveness  of  our  technique  on  a  training  data  set,  as  well  as  on a  real-life video sequence.
+    \item Mykyta Kovalenko, Svetlana Antoshchuk, Juergen Sieck, Real-Time Hand Tracking and Gesture Recognition Using Semantic-Probabilistic Network \cite{9} - A system for real-time hand gesture  recognition  for use  as  a  human-computer  interface.  Firstly,   hand   detection   is   performed   using   a   Viola-Jones   algorithm.  They  use  the  Brute Force Matching  to  track  the  position  of  each  detected  hand  in  each  video  frame.  The  hand  contour  is  then  extracted  using  a  Border  Following  algorithm,  which  is  preceded  by  skin-colour   thresholding, performed   in   HSV   colour   space.   Finally,  a  semantic-probabilistic  network  is  introduced,  which  uses  an  ontological  gesture  model  and  Bayesian  network  for  gesture  recognition.  They  then  demonstrate  the  effectiveness  of  our  technique  on  a  training  data  set,  as  well  as  on a  real-life video sequence.
     
-    \item Yee Yong Pang, Nor Azman Ismail, Phuah Leong Siang Gilbert, A Real Time Vision-Based Hand Gesture Interaction \cite{10} - Moving  beyond  mouse  and  keyboard,  the  evolution of human-computer interaction (HCI) has been an interest research in recent years which witnessed the development from text-based  like  using  a  keyboard  to  graphic  user  interface (GUI)  based  on  a  mouse,  from  cumbersome  data  gloves  and tracking devices to visual-based computer application. One of the  interest  fields  is  by  using  hand  gestures  to  interact  with computer.  However,  the  complexity  of  a  hand  set  a  lot  of challenges to be tracked. In real-time, the application requires high accurate detection and recognition. In additional the real and  clutter  environments  have  a  big  impact  on  recognition process  because  it  included  with  irrelevant  information  from the   application   point   of   view.   In   this   paper,   a   real   time vision based hand gesture interaction prototype was proposed. Currently  a  prototype  has  built  for  controlling  the  desktop cursor  and  concerned  the  tasks  involving  in  navigation  the desktop  cursor  by  using  hand  gesture  input  modality.
+    \item Yee Yong Pang, Nor Azman Ismail, Phuah Leong Siang Gilbert, A Real Time Vision-Based Hand Gesture Interaction \cite{10} - Moving  beyond  mouse  and  keyboard,  the  evolution of human-computer interaction (HCI) has been an interesting research topic in recent years which witnessed the development from text-based  like  using  a  keyboard  to  graphic  user  interface (GUI)  based  on  a  mouse,  from  cumbersome  data  gloves  and tracking devices to visual-based computer application. One of the  interest  fields  is  by  using  hand  gestures  to  interact  with computer.  However,  the  complexity  of  a  hand  set  a  lot  of challenges to be tracked. In real-time, the application requires high accurate detection and recognition. In additional the real and  clutter  environments  have  a  big  impact  on  recognition process  because  it  included  with  irrelevant  information  from the   application   point   of   view.   In   this   paper,   a   real   time vision based hand gesture interaction prototype was proposed. Currently  a  prototype  has been built  for  controlling  the  desktop cursor  and  concerned  the  tasks  involving  in  navigation  the desktop  cursor  by  using  hand  gesture  input  modality.
 
 \end{enumerate}
 
 \section{Proposed System}
 
 
-The system will implement the basic GUI features using fluid Hand gestures. The system will be implemented as a daemon continuously running in the background. We require a good system as well as a decent web cam. Good lighting conditions are also favourable.
+The system will implement the basic GUI features using fluid Hand gestures. The system will be implemented as a daemon continuously running in the background. We require a good computer as well as a decent web cam. Good lighting conditions are also favourable.
 The system will be advantageous over the existing system as it tends to be a more natural form of interaction. 
-The main disadvantages we face over here is the lack of good web cams and system performances. The operating system is currently limited only to Linux. Future work includes incorporating the rest of the operating systems. 
+The main disadvantages we face over here is the lack of good web cams and performing systems. The operating system is currently limited only to Linux. Future work includes incorporating other operating systems. 
 
 \chapter{Software Requirement Specification}
 % \subsection{Introduction}
@@ -314,12 +314,12 @@ Hand Gesture GUI Control System version 1 revison 1 - A Real time dynamic Hand G
 This document is intended for the developers of the system. Developers may use document to get a better understanding of the requirements of the system and the prerequisites for building the system.
 
 \subsection{Project Scope}
-The software specified has the purpose of implementing natural and easy to understand hand gestures to control the operating system. The operating system we use here is Linux. We are implementing fluid hand gestures rather than static hand gestures which is tracked by the standard webcam rather than using specialized equipment.
+The software specified has the purpose of implementing natural and easy-to-understand hand gestures to control the operating system. The operating system we use here is Linux. We are implementing fluid hand gestures rather than static hand gestures which is tracked by the standard webcam rather than using specialized equipment.
 
 \subsection{Overview of Developer's Responsibilities}
 The developers must design and implement the Hand Gesture Recognition System and the Control System for the GUI. Developers must determine valid gestures and mappings for each gesture to a appropriate function in the GUI of the computer. 
 
-The developer should :
+The tasks for the developer are:
 \begin{itemize}
 \item Reviewing current systems.
 \item Presenting ideas for system improvements, including cost proposals.
@@ -357,8 +357,8 @@ The major Linux GUI features to be implemented are:
     \item Close window
     \item Open Apps Launcher
     \item Open Terminal
-    \item Scroll down / Up
-    \item Zoom in/ out
+    \item Scroll down / up
+    \item Zoom in / out
     \item Switch Tabs.
 \end{itemize}
 
@@ -389,7 +389,7 @@ The software can be limited by several factors.
     \item Poor camera quality
     \item Poor System Performance
     \item System Memory Constraints
-    \item Camera is already is use by another application
+    \item Camera is already is in use by another application
 \end{itemize}
 
 \subsection{Assumptions and Dependencies}
@@ -402,7 +402,7 @@ A good webcam will be present and will be always searching for hand gestures.
 \section{External Interface Requirements}
 
 \subsection{User Interfaces}
-There will be single user interface where the user can enable and disable the daemon. Add and remove gestures. Change mappings between gestures and commands and map gestures to custom macros and keyboard strokes.
+There will be a single user interface where the user can enable and disable the daemon, add and remove gestures, change mappings between gestures and commands and map gestures to custom macros and keyboard strokes.
 \\
 \begin{center}
     \includegraphics[scale=0.8]{mainui.png}
@@ -458,7 +458,6 @@ The application will need internet connection to send bug reports in case of a c
         \item \textbf{Image Processing (imgproc)} - an image processing module that includes linear and non-linear image filtering, geometrical image transformations (resize, affine and perspective warping, generic table-based remapping), color space conversion, histograms, and so on.
         \item \textbf{Video Analysis (video)} - a video analysis module that includes motion estimation, background subtraction, and object tracking algorithms.
         \item \textbf{Camera Calibration and 3D Reconstruction (calib3d)} - basic multiple-view geometry algorithms, single and stereo camera calibration, object pose estimation, stereo correspondence algorithms, and elements of 3D reconstruction.
-        \item \textbf{2D Features Framework (features2d)} - salient feature detectors, descriptors, and descriptor matchers.
         \item \textbf{Object Detection (objdetect)} - detection of objects and instances of the predefined classes (for example, faces, eyes, mugs, people, cars, and so on).
         \item \textbf{High-level GUI (highgui)} - an easy-to-use interface to simple UI capabilities.
         \item \textbf{Video I/O (videoio)} - an easy-to-use interface to video capturing and video codecs.
@@ -495,13 +494,13 @@ Input: Toggle button
 \\Output: The daemon shall be stopped/started.
 
 \subsection{Add new gestures}
-The user should be able to add new gestures by recording the hand movement and mapping the GUI feature to the current Hand gesture.
+The user should be able to add new gestures by mapping a GUI feature to the desired Hand gesture.
 \begin{center}
     \includegraphics[scale=0.5]{add.png}
 \end{center}
-Input: Multiple Iterations of a gesture via Camera; Action to carry out
-\\Process: The software will train the Neural Network to identify the new hand gesture and map the hand gesture to the Command given as input
-\\Output: A new mapping from the hand gesture to the command will be added
+Input: A GUI feature (Bash command) and the desired Hand gesture
+\\Process: The software will edit the configuration to call the GUI function when the desired hand gesture is detected.
+\\Output: A new mapping from the hand gesture to the command will be added.
 
 \subsection{Remove gestures}
 The user can remove the existing gestures
@@ -585,7 +584,7 @@ The different elements in the background has to be discarded and only the shape 
 \\
 The captured image from the camera needs to undergo background subtraction in order to recognize the gesture correctly. The different elements in the background has to be discarded and only the shape of the hand is retained.  
 We convert the BGR image to HSV image using cv::cvtColor() function
-We use cv::inRange function to get the Hue,Saturation and Value as ranges of the saved HSV val
+We use cv::inRange function to get the Hue, Saturation and Value as ranges of the saved HSV value.
 \subsection{Module 3 - Feature Extraction}
 The next step is to find the fingertip locations in the recorded image from the background subtracted image.
 To recognize the fingertips we use the Convex Hull algorithm. 
@@ -978,7 +977,7 @@ these interfaces are considered GUI's since they include graphical elements.
 \section{GUI Overview}
 
 For the proposed system, the GUI is built using the GTK library. We have components for Mapping out the 
-different gestures, calibrating the system, Adding and Remove Mappings to Gestures.  
+different gestures, calibrating the system, adding and removing mappings to gestures.  
 
 \section{Main GUI Components}
 
@@ -1058,7 +1057,7 @@ This system can also be implemented for a more immersive gaming experience. Game
     
     \bibitem{5} Takuro Niidome, Div. of Elec. and Comp. Eng,Yokohama National University,Rokuya Ishii, Div. of Elec. \& Comp. Eng., Yokohama National University, A GUI Support System for a Sight Handicapped Person By Using Hand Shape Recognition, IECONO1: The 27th Annual Conference of the IEEE Industrial Electronics Society, 2001
     
-    \bibitem{6} X. Wu, C. Yang, Y. Wang, H. Li, and S. Xu, “An Intelligent Interactive System Based on Hand Gesture Recognition Algorithm and Kinect,” Fifth International Symposium on Computational Intelligence and Design, pp.294-298, 2012
+    \bibitem{6} X. Wu, C. Yang, Y. Wang, H. Li, and S. Xu, "An Intelligent Interactive System Based on Hand Gesture Recognition Algorithm and Kinect," Fifth International Symposium on Computational Intelligence and Design, pp.294-298, 2012
     
     \bibitem{7} Hayato Takahashi, Yuhki Kitazono, Integration of Hand Gesture and Multi Touch Gesture with Glove Type Device, 2016 4th Intl Conf on Applied Computing and Information Technology/3rd Intl Conf on Computational Science/Intelligence and Applied Informatics/1st Intl Conf on Big Data, Cloud Computing, Data Science \& Engineering
     
