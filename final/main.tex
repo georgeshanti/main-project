@@ -68,12 +68,12 @@
 
 \Huge{\textbf{MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm}}\\
 \vspace{0.05in}
-\large{\textbf{CS451 Project\\}}
+\large{\textbf{CS 492 Project\\}}
 \vspace{1.2in}
 
-\Large{\textbf{MDL15CS002 CSU 151 19}}	\hspace{.1in}	\Large{\textbf{GEORGE THOMAS SHANTI}}\\ 
-\Large{\textbf{MDL15CS003 CSU 151 46}}	\hspace{.1in}	\Large{\textbf{PRINCE MATHEW}}\\ 
-\Large{\textbf{MDL15CS025 CSU 151 51}}	\hspace{.1in}	\Large{\textbf{RIZA SALAHUDDIN}}\\ 
+\Large{\textbf{MDL15CS040 CSU 151 19}}	\hspace{.1in}	\Large{\textbf{GEORGE THOMAS SHANTI}}\\ 
+\Large{\textbf{MDL15CS082 CSU 151 46}}	\hspace{.1in}	\Large{\textbf{PRINCE MATHEW}}\\ 
+\Large{\textbf{MDL15CS089 CSU 151 51}}	\hspace{.1in}	\Large{\textbf{RIZA SALAHUDDIN}}\\ 
 \Large{\textbf{B. Tech Computer Science \& Engineering}}
 
 
@@ -117,13 +117,13 @@ hodcs@mec.ac.in\\
 \end{center}
 This is to certify that, this report titled \textbf{\textit{MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm}} is a bonafide record of the work done by\\
 \\
-\Large{\textbf{MDL15CS002 CSU 151 19}}	\hspace{.1in}	\Large{\textbf{GEORGE THOMAS SHANTI}}\\ 
-\Large{\textbf{MDL15CS003 CSU 151 46}}	\hspace{.1in}	\Large{\textbf{PRINCE MATHEW}}\\ 
-\Large{\textbf{MDL15CS025 CSU 151 51}}	\hspace{.1in}	\Large{\textbf{RIZA SALAHUDDIN}}\\ 
+\Large{\textbf{MDL15CS040 CSU 151 19}}	\hspace{.1in}	\Large{\textbf{GEORGE THOMAS SHANTI}}\\ 
+\Large{\textbf{MDL15CS082 CSU 151 46}}	\hspace{.1in}	\Large{\textbf{PRINCE MATHEW}}\\ 
+\Large{\textbf{MDL15CS089 CSU 151 51}}	\hspace{.1in}	\Large{\textbf{RIZA SALAHUDDIN}}\\ 
 \\
 \normalsize
 \centerline  {\textsf{Eighth Semester B. Tech. Computer Science \& Engineering}}\\
-students,  for the course work in \textbf{CS451 Project}, which is the second part of the two semester project work, under our guidance and supervision, in partial 
+students,  for the course work in \textbf{CS492 Project}, which is the second part of the two semester project work, under our guidance and supervision, in partial 
  fulfillment of the requirements for the award of the degree, B. Tech. Computer 
 Science \& Engineering of \textbf{APJ Abdul Kalam Technological University}.
 
@@ -177,11 +177,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx\= xxxxxxxxxxxxxxxxxx\= \kill
 
 This project would not have been possible without the kind support and help of many individuals. We would like to extend my sincere thanks to all of them.
   
-First of all, We would like to thank our esteemed Principal, Prof. (Dr.) V.P Devassia, for his guidance and support in maintaining a calm and refreshing environment to work in and also for providing the facilities that this work demanded.
+First of all, We would like to thank our esteemed Principal, Prof. (Dr.) Vinu Thomas, for his guidance and support in maintaining a calm and refreshing environment to work in and also for providing the facilities that this work demanded.
   
-We am highly indebted to our Project Coordinator, Dr. Priya S, Associate Professor and Head of the Department, Dr. Manilal D L, Associate Professor for their guidance, support and constant supervision throughout the duration of the work as well as for providing all the necessary information and facilities that this work demanded.
+We are highly indebted to our Project Coordinator, Dr. Priya S, Professor, and Manilal D L, Head of the Department and Associate Professor for their guidance, support and constant supervision throughout the duration of the work as well as for providing all the necessary information and facilities that this work demanded.
 
-We would like to thank our Project Guide, ..... for his/her support and valuable insights and also for helping me out in correcting any mistakes that were made during the course of the work. 
+We would like to thank our Project Guide,Asst. Professor Sheena K.V for her support and valuable insights and also for helping me out in correcting any mistakes that were made during the course of the work. 
   
 We offer our sincere gratitude to all our friends and peers for their support and encouragement that helped me get through the tough phases during the course of this work.
   
@@ -194,15 +194,17 @@ Last but not the least, we thank the Almighty God for guiding me through and ena
 \flushleft \small{\texttt{George Thomas Shanti}}
 \flushleft \small{\texttt{Prince Mathew}}
 \flushleft \small{\texttt{Riza Salahuddin}}
- 
+
 \end{titlepage}
 
-
-
-\begin{abstract}
+\begin{abstract} 
 \pagenumbering{roman}
 
-The proposed system will allow users to manipulate his operating system’s GUI with his/her hands to do virtually anything. From moving around elements on the GUI such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The research effort centralizes on the efforts of implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in virtual environment using hand gestures.
+The purpose of this project is to build an alternative to conventional input devices.
+The proposed system will allow users to manipulate their operating system’s Graphical User Interface with their hands to do virtually anything. From moving around elements on the screen such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The project centralizes on implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in the user interface using hand gestures. 
+
+Existing systems use methods such as machine language algorithms and neural networks such as a CNN to recognize gestures. The proposed system will use a much simpler and less computationally intensive method to do the same. The system can use existing peripherals like the in-built webcam on laptops or any USB webcam connected to the computer.
+
 \end{abstract}
 
 \tableofcontents
@@ -212,9 +214,9 @@ The proposed system will allow users to manipulate his operating system’s GUI 
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
 
-\cleardoublepage
+% \cleardoublepage
 
-\addcontentsline{toc}{chapter}{\listtablename}
+% \addcontentsline{toc}{chapter}{\listtablename}
 % \listoftables
  
 \newpage
@@ -224,14 +226,9 @@ The proposed system will allow users to manipulate his operating system’s GUI 
 
 For decades the mouse and keyboard have been the primary choice of input device to use computers. We propose a complete methodology of controlling the operating system using fluid natural of hand gestures using the normal web camera instead of the conventional mouse. This can have wide range of applications.
 
-Evolution of ubiquitous computing, current user interaction approaches with keyboard, mouse and pen are not sufficient for the still widening spectrum of Human computerinteraction. Gloves and sensor based trackers are unwieldy,constraining and uncomfortable to use. Due to the limitation of these devices the useable command set based diligences isalso limited. Direct use of hands as an input device is an innovative method for providing natural Human Computer Interaction which has its inheritance from textbased interfaces through 2D graphical-based interfaces, multimedia-supported interfaces, to full-fledged multiparticipant Virtual Environ-
-ment (VE) systems. The proposed system will allow users to
-manipulate his operating system’s GUI with his/her hands to do virtually anything. From moving around elements on the GUI such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The research effort centralizes on the efforts of implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in virtual environment using hand gestures.
+Evolution of ubiquitous computing, current user interaction approaches with keyboard, mouse and pen are not sufficient for the still widening spectrum of Human computer interaction. Gloves and sensor based trackers are unwieldy,constraining and uncomfortable to use. Due to the limitation of these devices the useable command set based diligences is also limited. Direct use of hands as an input device is an innovative method for providing natural Human Computer Interaction which has its inheritance from text based interfaces through 2D graphical-based interfaces, multimedia-supported interfaces, to full-fledged multi participant Virtual Environment (VE) systems. The proposed system will allow users to manipulate his operating system’s GUI with his/her hands to do virtually anything. From moving around elements on the GUI such as windows and manipulating them to zooming in on pages, rotating them and using your hands as your own custom cursor. The research effort centralizes on the efforts of implementing an application that employs computer vision algorithms and gesture recognition techniques which in turn results in developing a low cost interface device for interacting with objects in virtual environment using hand gestures.
 
-The prototype architecture of the application comprises of a central computational module that applies the brute force matching technique for tracking of hands and its gestures. Haar like technique has been utilized as a classifier that is creditworthy for locating hand position and classifying gesture. The patterning of gestures has been done for recognition by mapping the number of defects that is formed in the hand with the assigned gestures. The virtual objects are produced using Open GL library. This hand gesture recognition technique
-aims to substitute the use of mouse for interaction with the
-virtual objects. This will be useful to promote controlling applications like virtual games, browsing images etc in virtual
-environment using hand gestures.
+The prototype architecture of the application comprises of a central computational module that applies the brute force matching technique for recognizing the gestures. Various image processing algorithms have been used to identify and track the hand. This hand gesture recognition technique aims to substitute the use of mouse for interaction with the virtual objects. This will be useful to promote controlling applications like virtual games, browsing images etc in virtual environment using hand gestures.
 
 \section{Proposed Project}
 
@@ -242,8 +239,8 @@ responsive. The better systems which track such movement require special hardwar
 The existing Mouse/Keyboard combination of input is lacking in fluidity of motion.
 
 \subsection{Proposed Solution}
-The proposed solution is developing a system called "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm"
-which uses the standard webcam built in laptops to record multiple frame hand gestures and execute corresponding GUI commands in the OS.
+The proposed solution is "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" which uses the standard webcam built in laptops to record multiple frame hand gestures and execute corresponding GUI commands in the OS. The system uses image processing techniques which are fast and robust to track and recognize the different hand gestures.
+
 
 
 \chapter{System Study Report}
@@ -441,7 +438,7 @@ The application will need internet connection to send bug reports in case of a c
     \item Linux operating system.
     \\
     \\The linux operating system was chosen due to the fact that it is easy to build software due to wide range of libraries and easy access to them and the compilers. Whereas in a OS like windows a special IDE like Visual Studio and proprietary libraries would be required to build software.
-    \item C++ compliler eg:- gcc
+    \item C++ compiler eg:- gcc
     \\
     \\C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
 
@@ -558,6 +555,11 @@ The product can be reused by other developers to create and maintain their own p
 
 \chapter{System Design}
 \section{System Architecture}
+
+
+MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm has been split into the following modules :
+\newline
+\newline
 \begin{tikzpicture}[node distance=5cm]
     \node (proc1) [process] {Image Retrieval};
     \node (proc2) [process, right of = proc1] {Background Subtraction};
@@ -571,29 +573,6 @@ The product can be reused by other developers to create and maintain their own p
     \draw [arrow] (proc4) -- (proc5);
     \draw [arrow] (proc5) -- (proc6);
 \end{tikzpicture}
-
-\section{Use case diagram}
-\begin{center}
-    \includegraphics{usecase.png}
-\end{center}
-\section{Class diagram}
-\begin{center}
-    \includegraphics[width=14cm]{classdiagram.png}
-    \vspace{10cm}
-    \includegraphics[width=14cm]{UserClass.png}
-\end{center}
-\section{Activity diagram}
-\begin{center}
-    \includegraphics[scale=0.8]{activitydiagram.png}
-\end{center}
-
-\section{Input Design}
-    In the system, the hand gesture is captured by the web cam in multiple frames. After the gesture Is
-    carried out, it is recognized and the corresponding GUI command is carried out.
-
-% \section{Database Design}
-\section{Libraries and Packages Used}
-
 
 \section{Module Description}
 
@@ -648,6 +627,50 @@ the corresponding class object is accessed to procure the GUI function that has 
 for that particular gesture. The function is first executed, and then the daemon starts listening 
 for the next gesture.
 
+\section{Use case diagram}
+\begin{center}
+    \includegraphics{usecase.png}
+\end{center}
+\section{Class diagram}
+\begin{center}
+    \includegraphics[width=14cm]{classdiagram.png}
+    \vspace{10cm}
+    \includegraphics[width=14cm]{UserClass.png}
+\end{center}
+\section{Activity diagram}
+\begin{center}
+    \includegraphics[scale=0.8]{activitydiagram.png}
+\end{center}
+
+\section{Input Design}
+    In the system, the hand gesture is captured by the web cam in multiple frames. After the gesture Is
+    carried out, it is recognized and the corresponding GUI command is carried out.
+
+% \section{Database Design}
+\section{Libraries and Packages Used}
+\begin{itemize}
+\item Libraries Used:
+\begin{itemize}
+    \item OpenCV C++ library
+    \\
+    \\OpenCV (Open source computer vision) is a library of programming functions mainly aimed at real-time computer vision. OpenCV is written in C++ and its primary interface is in C++. All of the new developments and algorithms in OpenCV are now developed in the C++ interface. 
+    \\
+    \\OpenCV has a modular structure, which means that the package includes several shared or static libraries.
+    
+    OpenCV has functions available for background subtraction. Several algorithms were introduced for this purpose. OpenCV has implemented three such algorithms which are very easy to use like BackgroundSubtractorMOG, BackgroundSubtractorMOG2 and BackgroundSubtractorGMG.
+    
+    \item GTK+ Library for C++
+    \\
+    \\GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites.
+    \\
+    \\The GTK+ Library is needed to build an interactive GUI where users can configure the Gesture Control System. Functions to create windows and other GUI elements such as buttons, lists, pop-ups, drop-downs, frames to display video, etc are available in the library. The library also allows to bind functions to events in the GUI such as clicks, key-presses and so on.
+    \\
+    
+\end{itemize}
+
+\end{itemize}
+
+
 \chapter{Data Flow Diagram}
 
 \section{Level 0}
@@ -688,7 +711,7 @@ for the next gesture.
 \begin{tikzpicture}[node distance=0cm]
     \node (proc1) [oval]{Frame Sequence};
 
-    \node (over1) [overlay, label=above:Background Subtraction and Feature Extreaction, minimum width = 11cm, minimum height = 7cm, right of = proc1, xshift=9cm]{};
+    \node (over1) [overlay, label=above:Background Subtraction and Feature Extraction, minimum width = 11cm, minimum height = 7cm, right of = proc1, xshift=9cm]{};
 
     \node (proc2) [process2, below=of over1.north west, xshift=2.6cm, yshift=-0.2cm]{\\Background Detection\\\\
     The image is scanned\\
@@ -709,8 +732,8 @@ for the next gesture.
     \draw [black] ([yshift=0.5cm]proc2.west)--([yshift=0.5cm]proc2.east);
     \draw [black] ([yshift=0.5cm]proc3.west)--([yshift=0.5cm]proc3.east);
     \draw [black] ([yshift=0.4cm]proc4.west)--([yshift=0.4cm]proc4.east);
-    \draw [arrow] (proc2)--(proc3) node[midway, above]{$$};
-    \draw [arrow] (proc3)--(proc4) node[midway, above]{$$};
+    \draw [arrow] (proc2)--(proc3) node[midway, above]{$ $};
+    \draw [arrow] (proc3)--(proc4) node[midway, above]{$ $};
     \node (over2) [overlay, label={[xshift=-3.7cm]Gesture Recognition}, minimum width = 11cm, minimum height = 5.8cm, right of = over1, yshift=-8cm]{};
 
     \node (proc5) [process2, below=of over2.north west, xshift=2.6cm, yshift=-0.2cm]{\\Object Tracking\\\\
@@ -729,8 +752,8 @@ for the next gesture.
     \draw [black] ([yshift=0.4cm]proc5.west)--([yshift=0.4cm]proc5.east);
     \draw [black] ([yshift=0.5cm]proc6.west)--([yshift=0.5cm]proc6.east);
     \draw [black] ([yshift=0.5cm]proc7.west)--([yshift=0.5cm]proc7.east);
-    \draw [arrow] (proc5)--(proc6) node[midway, below]{$$};
-    \draw [arrow] (proc6)--(proc7) node[midway, below]{$$};
+    \draw [arrow] (proc5)--(proc6) node[midway, below]{$ $};
+    \draw [arrow] (proc6)--(proc7) node[midway, below]{$ $};
 
     \node (over3) [overlay, label={[xshift=-4.7cm]Daemon}, minimum width = 11cm, minimum height = 4cm, right of = over2, yshift=-6.1cm]{};
 
@@ -740,7 +763,7 @@ for the next gesture.
 
     \node (proc9) [process2, right of = proc8, xshift=6cm]{\\Function Execution\\\\
     Function is executed\\};
-    \draw [arrow] (proc8)--(proc9) node[midway, below]{$$};
+    \draw [arrow] (proc8)--(proc9) node[midway, below]{$ $};
 
     \draw [arrow] (over2)--(over3) node[midway, right]{$Gesture$};
 
@@ -755,7 +778,7 @@ for the next gesture.
 \begin{itemize}
     \item Input: A set of contiguous image frames
     \item Output: The mapped GUI function
-    \item Method:
+    \item Overall Method:
     \begin{enumerate}
         \item Calculate the foreground using background subtraction algorithm.
         \item Detect the fingertips using the Convex Hull algorithm.
@@ -764,7 +787,7 @@ for the next gesture.
         \item Find the closest SavedGesture object and execute the GUI function.
     \end{enumerate}
 \end{itemize}
-\subsection{Background subtraction}
+\subsection{Background subtraction - Color Range}
 \begin{enumerate}
     \item Purpose: To find the Region of Interest by subtracting the background from the image frame.
     \item Input: Image frames with foreground and background.
@@ -776,11 +799,11 @@ for the next gesture.
         \item Remove the colours are which stay longer and more static.
     \end{itemize}
 \end{enumerate}
-\subsection{Convex Hull}
+\subsection{Feature Extraction - Convex Hull}
 \begin{itemize}
     \item Purpose: To find the positions of the fingertips in the image frame.
-    \item Input: Image frames with background subtracted.
-    \item Output: List of Convex Hull peaks
+    \item Input: Image frames with only foreground.
+    \item Output: List of Convex Hull peaks, representing the fingertip positions.
     \item Method:
     \begin{enumerate}
         \item Threshold the image, and retrieve the points in the plane. Let's say there are P points.
@@ -791,49 +814,38 @@ for the next gesture.
             \item next[p] = q (Store q as next of p in the output convex hull).
             \item p = q (Set p as q for next iteration).
         \end{enumerate}
+        
     \end{enumerate}
 \end{itemize}
-\subsection{Brute Force Matching}
+\subsection{Gesture Recognition - Brute Force Matching}
 \begin{itemize}
     \item Purpose: To map the positions of the fingertips in the multiple frames to one fluid motion, in the form of lines/curves in a 2D plane.
-    \item Input: The points pertaining to a gesture (with minimal jitter)
-    \item Output: A value representing the swipe direction and distance between points.
+    \item Input: List of Convex Hull peaks, representing the fingertip positions.
+    \item Output: An object representing the swipe direction and distance between points. 
     \item Method:
     \begin{enumerate}
-        \item For a given keypoint K1 from the first set, take the next keypoint in the set and calculate the distance.
-        \item Choose the initial location of the two-dimensional mean shift search window.
-        \item Calculate the colour probability distribution in the 2D region centred on the search window location in an area slightly larger than the mean shift window size.
-        \item Perform the search of the maximum density probability using the mean shift parameter for convergence or for setting the number of iterations. Store the zero moment (area or size) and middle position.
-        \item For the next image frame, place the search window in the middle position fixed in step 4, and set the window size in conformity to the last moment. Go to step 3. 
+        \item If the distance is less than a threshold, then flush the buffer because the gesture is too slow.
+        \item Keep Jitter Tolerance as a useful value (like 5) and flush the buffer if the number of jitter values exceeds 5.
+        \item If the buffer length reaches a value, the distanceAndDirectionFrom function helps to get the type of swipe.
     \end{enumerate}
 \end{itemize}
-\subsection{Brute Force Matching}
+\subsection{Gesture Mapping}
 \begin{itemize}
-    \item Purpose: To match the DetectedGesture to a SavedGesture, and execute the corresponding GUI function.
-    \item Input: The feature objects encoded in the SavedFeature and DetectedFeature objects.
-    \item Output: A quantity representing the closeness of the two gestures.
-    \item Method:
+    \item Purpose: To match the buffered set of points to a gesture, and execute the corresponding GUI function.
+    \item Input: An object representing the swipe direction and distance between points, after eliminating jitter.
+    \item Output: A gesture is executed.
+    \item Method: If the buffered set of points represent a gesture, it is executed.
     \begin{enumerate}
-        \item For a given keypoint K1 from the first set, take every keypoint in the second set and calculate the distance.
-        \item Distance formula used is Euclidean distance. The sum of the distances on each dimension is finally used to calculate the returned quantity.
-        \item Distance formula used is Euclidean distance. The sum of the distances on
-        each dimension is finally used to calculate the returned quantity.
-        \item If the distance is lesser than a threshold, then flush the buffer because the gesture is too slow.
-        \item Keep Jitter Tolerance to a useful value (like 5) and flush the buffer if the number of jitter values exceeds 5.
-        \item If the buffer length reaches a value, the distanceAndDirectionFrom function helps to get the type of swipe.
+        \item A configuration file is used to store the swipe direction, finger count, and a corresponding Bash function. This file is read.
+        \item Depending on the type of swipe, the corresponding Bash function is executed for GUI control.
     \end{enumerate}
 \end{itemize}
 \section{Development Tools}
 \subsection{Sublime Text}
-Sublime Text is a proprietary cross-platform source code editor with a Python application program-
-ming interface (API). It natively supports many programming languages and markup languages,
-and functions can be added by users with plugins, typically community-built and maintained under
-free-software licenses.
 Some of the features of Sublime Text are
 \begin{itemize}
 \item ”Goto Anything,”quick navigation to files, symbols, or lines
-\item ”Command palette” uses adaptive matching for quick keyboard invocation of arbitrary com-
-mands
+\item ”Command palette” uses adaptive matching for quick keyboard invocation of arbitrary commands
 \item Simultaneous editing: simultaneously make the same interactive changes to multiple selected
 areas
 
@@ -872,8 +884,7 @@ opposed to the functionality exposed to the end-user. In white-box testing an in
 of the system, as well as programming skills, are used to design test cases. The tester chooses in-
 puts to exercise paths through the code and determine the appropriate outputs. This is analogous
 to testing nodes in a circuit. While white-box testing can be applied at the unit, integration and system levels of the software testing process, it is usually done at the unit level.
-Black-box testing treats the software as a black-box , examining functionality without any knowl-
-edge of internal implementation, without seeing the source code. The testers are only aware of
+Black-box testing treats the software as a black-box , examining functionality without any knowledge of internal implementation, without seeing the source code. The testers are only aware of
 what the software is supposed to do, not how it does it. Here the black-box testing is used for the
 system. The testing methods applied were:
 
@@ -901,7 +912,7 @@ module in RGB colour space. The output images were in HSV filtered with Colour R
 
 \begin{figure}[h]
     \includegraphics[width=15cm]{backgroundtesting.png}
-    \caption{Background Subtraction Module}
+    \caption{Subtracting the background using HSV Colour Range detection}
 \end{figure}
 
 \subsection{Feature Extraction}
@@ -914,7 +925,7 @@ each hull.
     \includegraphics[width=15cm]{featuretest.png}
     
     \includegraphics[width=15cm]{featuretest2.png}
-    \caption{Feature Extraction Module}
+    \caption{Extracting the finger tips of the hand}
 \end{figure}
 
 \subsection{FingerTip Tracking and Gesture Recognition}
@@ -924,7 +935,7 @@ The Finger tip tracking module tracks the centroids movement over multiple frame
 \begin{figure}[H]
     \includegraphics[width=15cm]{gesture.png}
     
-    \caption{Finger Tip Tracking and Gesture Recognition}
+    \caption{Tracking the finger tips and Recognizing the gesture.}
 \end{figure}
 
 
@@ -942,8 +953,7 @@ Finally the output is passed to the Gesture Map module which executes the gestur
 After the integration testing, we do the system testing. In system testing the whole modules are
 connected in order; the background subtraction module is integrated with the feature extraction module,the
 feature extraction module is integrated with the fingertip tracking and also the gesture recognition
-module and gesture mapping module. The whole system is inte-
-grated.
+module and gesture mapping module. The whole system is integrated.
 
 
 
@@ -984,7 +994,7 @@ different gestures, calibrating the system, Adding and Remove Mappings to Gestur
     \begin{figure}[H]
     \includegraphics[width=14cm]{1.png}
     \label{Calibrate Detection}
-    \caption{Calibrate Detection}
+    \caption{Calibrate the System to detect the colours in different lighting}
     \end{figure}
 \subsection{Gesture Mapping}
 
@@ -992,53 +1002,55 @@ different gestures, calibrating the system, Adding and Remove Mappings to Gestur
     the users wish. It also allows the user to remove a gesture mapping or add a new gesture mapping.
     \begin{figure}[H]
         \includegraphics[width=14cm]{2.png}
+        \caption{Mapping the different gestures to different commands}
+
         \label{Map Gesture}
-        \caption{Map Gesture}
         \end{figure}
 
 \chapter{Results}
 \begin{figure}[H]
     \includegraphics[width=14cm]{1.png}
     \label{Calibrate Detection}
-    \caption{Calibrate Detection}
+    \caption{Output of the Calibrate Detection Module}
     \end{figure}
 
     \begin{figure}[H]
         \includegraphics[width=14cm]{2.png}
         \label{Add Gesture}
-        \caption{Add Gesture}
+        \caption{Output of the Add Gesture Module}
         \end{figure}
 
     \begin{figure}[H]
-            \includegraphics[width=14cm]{3.png}
-            \label{Remove Gesture}
-            \caption{Remove Gesture}
-            \end{figure}
+        \includegraphics[width=14cm]{3.png}
+        \label{Remove Gesture}
+        \caption{Output of the Remove Gesture Module}
+        \end{figure}
 
     \begin{figure}[H]
-                \includegraphics[width=14cm]{4.png}
-                \label{Executed Gesture 4 Finger Up swipe - a}
-                \caption{Executed Gesture 4 Finger Up swipe - a}
-
-                \end{figure}
+        \includegraphics[width=14cm]{4.png}
+        \label{Executed Gesture 4 Finger Up swipe - a}
+        \caption{Executed Gesture 4 Finger Up swipe - a}
+        \end{figure}
     \begin{figure}[H]
-                    \includegraphics[width=14cm]{5.png}
-                    \label{Executed Gesture 4 Finger Up swipe - b}
-                    \caption{Executed Gesture 4 Finger Up swipe - b}
-                    \end{figure}
+        \includegraphics[width=14cm]{5.png}
+        \label{Executed Gesture 4 Finger Up swipe - b}
+        \caption{Executed Gesture 4 Finger Up swipe - b}
+        \end{figure}
+
 \chapter{Conclusion}
 
-    The project "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" is a scalable solution
-    to the problem of implementing fluid Hand gesture controlled GUIs. The current Hand Gesture recognition
-    systems do not process hand gestures over multiple frames. The project is capable of detecting Hand Guestures
-    which include motion of the whole hand.
+The project "MultiFrame Hand Gesture GUI Control System using Convex Hull Algorithm" is a scalable solution to the problem of implementing fluid Hand gesture controlled GUIs. The current Hand Gesture recognition systems do not process hand gestures over multiple frames. The project is capable of detecting Hand Gestures which include motion of the whole hand.
 
-
+In the current implementation, the positions of the in fingers and finger count are being used to label different gestures, and a large number of gestures can be detected. Using C++ as the development language, high performance finger tip detection and matching techniques makes the system very fast and highly responsive. Multiple pointing devices have been used for GUI control like trackpads, and joysticks but using the standard webcam and high performance software means that the user can control the system from a certain distance and has more options than traditional pointing systems. The system has a huge scope for improvement both in terms of features and performance.
+    
 \chapter{Future Scope}
 
-The future scope of this project is to implement the same as a standard input method in across all computers
-equipped with a webcam. The fluidity of the GUI gestures allow it to be implemented and used easily by 
-all people across the world. The hand gestures are language independant, and thus can be ported to other regions easily.
+The future scope of this project is to implement the same as a standard input method across all computers equipped with a webcam. The fluidity of the GUI gestures allow it to be implemented and used easily on all Linux platforms. The hand gestures are language independent, and thus can be ported to other regions easily. More types of gestures can be added, if a more complex gesture matching is used, but that also means the performance will degrade. So a performant and feature-rich algorithm can be developed to detect more complex gestures. Extending the current fingercap-based fingertip detection is another improvement. Fingertip and hand detection can be done without using fingercaps, but a fast and robust algorithm needs to be developed for such an enhancement. Using a more advanced fingertip detection method also means more precise gesture detection and mapping.
+
+
+This system can also be implemented for a more immersive gaming experience. Games often have 3D environments rendered on the display. These environments have entire buildings and cities modeled in them with various objects like books, doors, weapons and so on. Instead of using input devices like joysticks and gaming controllers to interact with the game environment by clicking buttons to carry out actions, users can use their hands to interact with environment themselves.
+
+Using hand gesture input can also make 3D modeling applications easier
 
 % \chapter{Publication}
    
